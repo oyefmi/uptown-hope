@@ -1,0 +1,183 @@
+/* Universal Styling */
+p {
+    margin: auto;
+}
+
+.cover {
+    height: 60vh;
+}
+
+.wrapper {
+    background-color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Home page CSS */
+.main {
+    background: url(uptownhope_bkgrd.png) no-repeat center center fixed;
+    height: auto; 
+    background-size: cover;
+    background-position-y: 40px;
+    position: relative;
+    margin: auto;
+}
+
+.top-block {
+    background: rgba(230, 115, 14, 1);
+    color:  #0b2ca3;
+}
+
+.top-block h1{
+    color: #ffffff;
+    text-shadow: 2px 2px #0b2ca3;
+}
+
+.symbol {
+    background-color: rgba(230, 115, 14, 1);
+    height: auto;
+}
+
+.block {
+    color:  #0b2ca3;
+    padding: 15px 90px;
+    font-weight: 500;
+    max-width: 20%;
+    vertical-align: top;
+}
+
+.block span {
+    font-size: 50px;
+}
+
+.block h3 {
+    font-weight: bold;
+    margin-top: 1rem;
+    margin-bottom: auto;
+    /* text-align: left; */
+}
+
+.block p {
+    text-align: left;
+}
+
+/* About Page CSS */
+.about {
+    background: url(group_photo.jpg) no-repeat center center fixed;
+    height: auto; 
+    background-size: cover;
+    /* background-position-y: 30px; */
+    position: relative;
+}
+
+.page-content {
+    text-align: left;
+    width: 70vw;
+    height: auto;
+}
+
+#title {
+    margin: auto;
+    padding: 20px;
+    background-color: #e8e8ea;
+    color: rgba(230, 115, 14, 1);
+}
+
+.mission {
+    margin: auto;
+}
+
+.mission-text {
+    margin: auto;
+    padding: 20px;
+    background-color: #ffffff;
+}
+
+.vis-val {
+    display: flex;
+    background-color: #ffffff;
+}
+
+
+/* Serivces Page CSS */
+.service-page {
+    background: url(Servicespage_image.jpg) no-repeat center center fixed;
+    /* width: 100vw; */
+    height: auto; 
+    background-size: cover;
+    background-position-y: 10px;
+    position: relative;
+}
+
+.page-content {
+    text-align: left;
+    width: 70vw;
+    height: auto;
+}
+
+#title {
+    margin: auto;
+    padding: 20px;
+    background-color: #e8e8ea;
+    color: rgba(230, 115, 14, 1);
+}
+
+.services {
+    margin: auto;
+}
+
+.services-text {
+    margin: auto;
+    padding: 20px;
+    background-color: #ffffff;
+}
+
+
+/* Employment Page CSS */
+.employment {
+    background: url(application.jpg) no-repeat center center fixed;
+    background-size: cover;
+    height: auto; 
+    background-position-y: 40px;
+    position: relative;
+}
+
+/* FAQ Page CSS */
+.faq {
+    background: url(typing.jpg) no-repeat center center fixed;
+    background-size: cover;
+    height: auto; 
+    /* background-position-y: 10px; */
+    position: relative;
+}
+
+
+/* Contact Page CSS */
+.contact {
+    margin: auto;
+    padding-bottom: 1em;
+}
+
+.contact_info {
+    display: flex;
+    padding: 1em 2em;
+}
+
+.uptown_hope {
+    width: 50%;
+}
+
+.uptown_hope p a{
+    font-size: 22px;
+}
+
+.contact_button {
+    padding-top: .5em;
+    
+}
+
+/* For phones and smaller screens */
+@media screen and (min-width: 799px) {
+    
+}
