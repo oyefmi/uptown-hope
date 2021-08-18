@@ -7,6 +7,10 @@ const location = {
     address: 'Uptown Hope',
     lat: 39.4253,
     lng: -76.8113
+}
+
+const onSendClick = () => {
+    console.log('input sent');
   }
 
 const Contact = () => {
@@ -26,21 +30,20 @@ const Contact = () => {
                             <p>410-363-9498 (fax)</p>
                             <a href = "mailto: uptownhopellc@gmail.com">uptownhopellc@gmail.com</a>
                             <br/><a href = "mailto: info@uptownhope.com">info@uptownhope.com</a>
-                            <br/><a>www.uptownhope.com</a>
                         </div>
                         <Container>
                             <Form>
                                 <FormGroup>
                                     <FormLabel>Name</FormLabel>
-                                    <FormControl required="true" type="text" placeholder="Name *"></FormControl>
+                                    <FormControl required={true} type="text" placeholder="Name *"></FormControl>
                                 </FormGroup>
                                 <FormGroup>
                                     <FormLabel>Email</FormLabel>
-                                    <FormControl type="text" placeholder="Email *"></FormControl>
+                                    <FormControl required={true} type="text" placeholder="Email *"></FormControl>
                                 </FormGroup>
                                 <FormGroup>
                                     <FormLabel>Phone Number</FormLabel>
-                                    <FormControl type="text" placeholder="Phone Number *"></FormControl>
+                                    <FormControl required={true} type="text" placeholder="Phone Number *"></FormControl>
                                 </FormGroup>
                                 <FormGroup>
                                     <FormLabel>Subject</FormLabel>
@@ -48,7 +51,7 @@ const Contact = () => {
                                 </FormGroup>
                             </Form>
                             <div className="contact_button">
-                                <Button className="float-end" variant="outline-secondary">Send</Button>
+                                <Button className="float-end" variant="outline-secondary" onClick={onSendClick}>Send</Button>
                             </div>
                         </Container>
                     </div>

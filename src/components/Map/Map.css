@@ -7,28 +7,34 @@
   }
   
   .google-map {
+    padding-top: 10px;
+    padding-bottom: 10px;
     width: 100%;
     height: 60vh;
   }
   
   .pin {
-    display: flex;
+    /* display: flex; */
     align-items: center;
     width: 180px;
     color: var(--main-blue);
   }
   
   .pin-icon {
-    font-size: 4rem;
+    font-size: 2rem;
   }
   
   .pin-text {
-    font-size: 1.3em;
+    width: 50%;
+    background-color: #0b2ca3;
+    font-weight: 600;
+    color: #ffffff;
+    font-size: 1.5em;
   }
   
   @media screen and (min-width: 799px) {
     .google-map {
-      height: 80vh;
+      height: 60vh;
     }
   
     .map-h2 {

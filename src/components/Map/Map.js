@@ -1,6 +1,6 @@
 import React from "react";
 import GoogleMapReact from 'google-map-react';
-// import LocationPin from './LocationPin';
+import LocationPin from './LocationPin';
 import './Map.css';
 
 const Map = ({ location, zoomLevel }) => {
@@ -11,11 +11,10 @@ const Map = ({ location, zoomLevel }) => {
                 bootstrapURLKeys={{ key: 'AIzaSyCwNXLxVSXuq_2Gy3pUY6XZWxNjuVbkmYs' }}
                 defaultCenter={location}
                 defaultZoom={zoomLevel}>
-                {/* <LocationPin>
+                <LocationPin 
                     lat={location.lat}
                     lng={location.lng}
-                    text={location.address}
-                </LocationPin> */}
+                    text={location.address} /> 
             </GoogleMapReact>
             </div>
         </div>

@@ -14,6 +14,12 @@ p {
     align-items: center;
 }
 
+.page-content {
+    text-align: left;
+    width: 70vw;
+    height: auto;
+}
+
 /* Home page CSS */
 .main {
     background: url(uptownhope_bkgrd.png) no-repeat center center fixed;
@@ -71,12 +77,6 @@ p {
     position: relative;
 }
 
-.page-content {
-    text-align: left;
-    width: 70vw;
-    height: auto;
-}
-
 #title {
     margin: auto;
     padding: 20px;
@@ -108,12 +108,6 @@ p {
     background-size: cover;
     background-position-y: 10px;
     position: relative;
-}
-
-.page-content {
-    text-align: left;
-    width: 70vw;
-    height: auto;
 }
 
 #title {

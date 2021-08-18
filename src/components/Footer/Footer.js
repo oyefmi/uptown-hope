@@ -41,12 +41,12 @@ const Footer = () => {
 				<p className="footer-company-about">
 					<span>Connect with us on social media</span>
 				</p>
-				<div className="footer-icons">
+				{/* <div className="footer-icons">
 					<a href="#"><i className="fa fa-facebook"></i></a>
 					<a href="#"><i className="fa fa-twitter"></i></a>
 					<a href="#"><i className="fa fa-linkedin"></i></a>
 					<a href="#"><i className="fa fa-github"></i></a>
-				</div>
+				</div> */}
 			</div>
 		</footer>
     )
