@@ -40,12 +40,12 @@ p {
     text-shadow: 2px 2px #0b2ca3;
 }
 
-.symbol {
-    background-color: rgba(230, 115, 14, 1);
-    height: auto;
+.wrapper-symbols {
+    display: flex;
+    justify-content: center;
 }
 
-.block {
+.symbol-block {
     color:  #0b2ca3;
     padding: 15px 90px;
     font-weight: 500;
@@ -53,19 +53,14 @@ p {
     vertical-align: top;
 }
 
-.block span {
+.symbol-block span {
     font-size: 50px;
 }
 
-.block h3 {
+.symbol-block h3 {
     font-weight: bold;
     margin-top: 1rem;
     margin-bottom: auto;
-    /* text-align: left; */
-}
-
-.block p {
-    text-align: left;
 }
 
 /* About Page CSS */
@@ -137,6 +132,17 @@ p {
     position: relative;
 }
 
+.job-info {
+    margin: auto;
+    padding: 20px;
+}
+
+.cards-row {
+    display: flex;
+    justify-content: center;
+    padding-top: 2em;
+}
+
 /* FAQ Page CSS */
 .faq {
     background: url(typing.jpg) no-repeat center center fixed;
@@ -159,11 +165,12 @@ p {
 }
 
 .uptown_hope {
-    width: 50%;
+    width: 45%;
+    align-items: center;
 }
 
-.uptown_hope p a{
-    font-size: 22px;
+.uptown_hope p, a{
+    font-size: 20px;
 }
 
 .contact_button {

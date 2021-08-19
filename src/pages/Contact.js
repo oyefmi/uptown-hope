@@ -22,14 +22,13 @@ const Contact = () => {
                     <h2 id="title">Contact Us</h2>
                     <div className="contact_info">
                         <div className="uptown_hope">
-                            <p style={{color: "rgba(230, 115, 14, 1)", fontWeight: "700"}}>Uptown Hope, LLC</p>
+                            <p style={{color: "rgba(230, 115, 14, 1)", fontWeight: "750"}}>Uptown Hope, LLC</p>
                             <p>300 Redland Court, Suite 200 
-                                <br/>Owings Mills, MD 21117</p>
+                            <br/>Owings Mills, MD 21117</p>
                             <p>410-363-9495 (moblie)</p>
                             <p>443-326-5069 (cell)</p>
                             <p>410-363-9498 (fax)</p>
-                            <a href = "mailto: uptownhopellc@gmail.com">uptownhopellc@gmail.com</a>
-                            <br/><a href = "mailto: info@uptownhope.com">info@uptownhope.com</a>
+                            <a href = "mailto: info@uptownhope.com">info@uptownhope.com</a>
                         </div>
                         <Container>
                             <Form>

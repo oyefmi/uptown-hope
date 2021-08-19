@@ -9,26 +9,27 @@ const Home = () => {
                 <p><em><strong>Positive Outlook, Open and Healthy Mind are the keys to success. 
                     <br/>Ability and Opportunity begins with Availability</strong></em>
                 </p>
-                <div className="wrapper symbol">
-                    <div className="block">
+                <div className="wrapper-symbols">
+                    <div className="symbol-block">
                         <span>&#9774;</span>
+
                         <h3>Holistic</h3>
-                        <p style={{paddingLeft: "25px"}}>approach to quality service provision</p>
+                        <p>approach to quality service provision</p>
                     </div>
-                    <div className="block">
+                    <div className="symbol-block">
                         <span>&#9728;</span>
                         <h3>Opportunity</h3> 
                         <p>for clients to effectively fill any staffing vacancies</p>
                     </div>
-                    <div className="block">
+                    <div className="symbol-block">
                         <span>&#10710;</span>
                         <h3>Preparation</h3>
                         <p>in order to always achieve a positive outcome</p>
                     </div>
-                    <div className="block">
+                    <div className="symbol-block">
                         <span>&#10048;</span>
                         <h3>Empowerment</h3>
-                        <p>and assistance blah blah blah blah blah blah</p>
+                        <p>and assistance</p>
                     </div>
                 </div>
             </div>
