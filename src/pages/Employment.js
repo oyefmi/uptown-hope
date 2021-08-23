@@ -13,26 +13,30 @@ const Employment = () => {
                             Additionally, if you would like to send your resume as well, 
                             it is appreciated but not required.</p>
                         <div className="cards-row">
-                            <Card style={{ width: '24rem' }}>
-                                <Card.Img variant="top" src="holder.js/100px180" />
+                            <Card style={{ width: '21rem' }}>
+                                <Card.Img variant="top" alt='Corporate Card' src='/corporate1.jpg' />
                                 <Card.Body>
-                                    <Card.Title>Card Title</Card.Title>
+                                    <Card.Title>Businesses</Card.Title>
                                     <Card.Text>
-                                    Some quick example text to build on the card title and make up the bulk of
-                                    the card's content.
+                                        Is your business short on staff? 
+                                        Are you looking for staff to help jumpstart a new business venture? 
+                                        Or are you just looking to shake things up in an unconventional way?
+                                        Whatever your Health Care staffing need, Uptown Hope can help. Click the link for infomation on how or how much!
                                     </Card.Text>
-                                    <Button variant="primary">Go somewhere</Button>
+                                    <br />
+                                    <Button variant="outline-secondary">Let Us Help</Button>
                                 </Card.Body>
                             </Card>
-                            <Card style={{ width: '24rem' }}>
-                                <Card.Img variant="top" src="holder.js/100px180" />
+                            <Card style={{ width: '21rem' }}>
+                                <Card.Img variant="top" alt='Contractor Card' src="/Hands_together_Diversity_hero.jpg" />
                                 <Card.Body>
-                                    <Card.Title>Card Title</Card.Title>
+                                    <Card.Title>Contractors</Card.Title>
                                     <Card.Text>
-                                    Some quick example text to build on the card title and make up the bulk of
-                                    the card's content.
+                                        Being a contractor at Uptown Hope means access to some of the best positions in a variety of health care positions.
+                                        If this is something you think may interest you, click the button below to find out how you can become a part of the Uptown Hope team!
                                     </Card.Text>
-                                    <Button variant="primary">Go somewhere</Button>
+                                    <br />
+                                    <Button variant="outline-secondary">Join the Team</Button>
                                 </Card.Body>
                             </Card>
                         </div>
