@@ -22,7 +22,7 @@ p {
 
 /* Home page CSS */
 .main {
-    background: url(uptownhope_bkgrd.png) no-repeat center center fixed;
+    background: url(../pages/pagesImages/uptownhope_bkgrd.png) no-repeat center center fixed;
     height: auto; 
     background-size: cover;
     background-position-y: 40px;
@@ -65,7 +65,7 @@ p {
 
 /* About Page CSS */
 .about {
-    background: url(group_photo.jpg) no-repeat center center fixed;
+    background: url(../pages/pagesImages/group_photo.jpg) no-repeat center center fixed;
     height: auto; 
     background-size: cover;
     /* background-position-y: 30px; */
@@ -97,7 +97,7 @@ p {
 
 /* Serivces Page CSS */
 .service-page {
-    background: url(Servicespage_image.jpg) no-repeat center center fixed;
+    background: url(../pages/pagesImages/Servicespage_image.jpg) no-repeat center center fixed;
     /* width: 100vw; */
     height: auto; 
     background-size: cover;
@@ -125,7 +125,7 @@ p {
 
 /* Employment Page CSS */
 .employment {
-    background: url(application.jpg) no-repeat center center fixed;
+    background: url(../pages/pagesImages/application.jpg) no-repeat center center fixed;
     background-size: cover;
     height: auto; 
     background-position-y: 40px;
@@ -145,7 +145,7 @@ p {
 
 /* FAQ Page CSS */
 .faq {
-    background: url(typing.jpg) no-repeat center center fixed;
+    background: url(../pages/pagesImages/typing.jpg) no-repeat center center fixed;
     background-size: cover;
     height: auto; 
     /* background-position-y: 10px; */
