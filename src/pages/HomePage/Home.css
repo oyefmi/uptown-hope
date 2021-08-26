@@ -1,0 +1,73 @@
+p {
+    margin: auto;
+}
+
+.cover {
+    height: 60vh;
+}
+
+.wrapper {
+    background-color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.page-content {
+    text-align: left;
+    width: 70vw;
+    height: auto;
+}
+
+.main {
+    background: url(../../pages/coverImages/uptownhope_bkgrd.png) no-repeat center center fixed;
+    height: auto; 
+    background-size: cover;
+    background-position-y: 40px;
+    position: relative;
+    margin: auto;
+}
+
+.top-block {
+    background: rgba(230, 115, 14, 1);
+    color:  #0b2ca3;
+}
+
+.top-block h1{
+    color: #ffffff;
+    text-shadow: 2px 2px #0b2ca3;
+}
+
+.wrapper-symbols {
+    display: flex;
+    justify-content: center;
+}
+
+.symbol-block {
+    color:  #0b2ca3;
+    padding: 15px 90px;
+    font-weight: 500;
+    max-width: 20%;
+    vertical-align: top;
+}
+
+.symbol-block span {
+    font-size: 50px;
+}
+
+.symbol-block h3 {
+    font-weight: bold;
+    margin-top: 1rem;
+    margin-bottom: auto;
+}
+
+.info {
+    display: flex;
+    padding: 1em;
+    background-color: #ffffff; 
+    text-align: center;
+}
+
+.info-text {
+    
+}

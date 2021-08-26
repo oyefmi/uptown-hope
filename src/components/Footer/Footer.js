@@ -1,5 +1,6 @@
 import React from "react";
 import './Footer.css';
+import  { SocialMediaIconsReact } from 'social-media-icons-react';
 
 const Footer = () => {
     return(
@@ -41,12 +42,12 @@ const Footer = () => {
 				<p className="footer-company-about">
 					<span>Connect with us on social media</span>
 				</p>
-				{/* <div className="footer-icons">
-					<a href="#"><i className="fa fa-facebook"></i></a>
-					<a href="#"><i className="fa fa-twitter"></i></a>
-					<a href="#"><i className="fa fa-linkedin"></i></a>
-					<a href="#"><i className="fa fa-github"></i></a>
-				</div> */}
+				<div className="footer-icons">
+					<SocialMediaIconsReact borderColor="rgba(0,0,0,0.25)" borderWidth="4" borderStyle="double" icon="facebook" iconColor="rgba(255,255,255,1)" backgroundColor="rgba(24,119,242,1)" url="#" size="40" />
+					<SocialMediaIconsReact borderColor="rgba(0,0,0,0.25)" borderWidth="4" borderStyle="double" icon="twitter" iconColor="rgba(255,255,255,1)" backgroundColor="rgba(26,166,233,1)" url="#" size="40" />
+					<SocialMediaIconsReact borderColor="rgba(14,11,120,0.38)" borderWidth="4" borderStyle="double" icon="instagram" iconColor="rgba(255,255,255,1)" backgroundColor="rgba(193,48,208,0.33)" url="" size="40" />
+					<SocialMediaIconsReact borderColor="rgba(0,0,0,0.25)" borderWidth="4" borderStyle="double" icon="linkedin" iconColor="rgba(255,255,255,1)" backgroundColor="rgba(10,102,194,1)" url="#" size="40" />
+				</div>
 			</div>
 		</footer>
     )

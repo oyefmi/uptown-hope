@@ -14,7 +14,7 @@ const Employment = () => {
                             it is appreciated but not required.</p>
                         <div className="cards-row">
                             <Card style={{ width: '21rem' }}>
-                                <Card.Img variant="top" alt='Corporate Card' src='/corporate1.jpg' />
+                                <Card.Img variant="top" alt='Corporate Card' src='../images/corporate1.jpg' />
                                 <Card.Body>
                                     <Card.Title>Businesses</Card.Title>
                                     <Card.Text>
@@ -28,7 +28,7 @@ const Employment = () => {
                                 </Card.Body>
                             </Card>
                             <Card style={{ width: '21rem' }}>
-                                <Card.Img variant="top" alt='Contractor Card' src="/Hands_together_Diversity_hero.jpg" />
+                                <Card.Img variant="top" alt='Contractor Card' src="../images/Hands_together_Diversity_hero.jpg" style={{height: "225px"}}/>
                                 <Card.Body>
                                     <Card.Title>Contractors</Card.Title>
                                     <Card.Text>

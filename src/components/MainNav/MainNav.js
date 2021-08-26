@@ -8,7 +8,7 @@ const MainNav = () => {
         <Navbar collapseOnSelect bg="light" expand="xl">
             <Navbar.Brand href="#home">
                 <img
-                    src="/uptownhope_logo.jpeg"
+                    src="../images/uptownhope_logo.jpeg"
                     width="100"
                     height="60"
                     paddingLeft="1"

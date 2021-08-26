@@ -20,52 +20,9 @@ p {
     height: auto;
 }
 
-/* Home page CSS */
-.main {
-    background: url(../pages/pagesImages/uptownhope_bkgrd.png) no-repeat center center fixed;
-    height: auto; 
-    background-size: cover;
-    background-position-y: 40px;
-    position: relative;
-    margin: auto;
-}
-
-.top-block {
-    background: rgba(230, 115, 14, 1);
-    color:  #0b2ca3;
-}
-
-.top-block h1{
-    color: #ffffff;
-    text-shadow: 2px 2px #0b2ca3;
-}
-
-.wrapper-symbols {
-    display: flex;
-    justify-content: center;
-}
-
-.symbol-block {
-    color:  #0b2ca3;
-    padding: 15px 90px;
-    font-weight: 500;
-    max-width: 20%;
-    vertical-align: top;
-}
-
-.symbol-block span {
-    font-size: 50px;
-}
-
-.symbol-block h3 {
-    font-weight: bold;
-    margin-top: 1rem;
-    margin-bottom: auto;
-}
-
 /* About Page CSS */
 .about {
-    background: url(../pages/pagesImages/group_photo.jpg) no-repeat center center fixed;
+    background: url(../pages/coverImages/group_photo.jpg) no-repeat center center fixed;
     height: auto; 
     background-size: cover;
     /* background-position-y: 30px; */
@@ -97,7 +54,7 @@ p {
 
 /* Serivces Page CSS */
 .service-page {
-    background: url(../pages/pagesImages/Servicespage_image.jpg) no-repeat center center fixed;
+    background: url(../pages/coverImages/Servicespage_image.jpg) no-repeat center center fixed;
     /* width: 100vw; */
     height: auto; 
     background-size: cover;
@@ -125,7 +82,7 @@ p {
 
 /* Employment Page CSS */
 .employment {
-    background: url(../pages/pagesImages/application.jpg) no-repeat center center fixed;
+    background: url(../pages/coverImages/application.jpg) no-repeat center center fixed;
     background-size: cover;
     height: auto; 
     background-position-y: 40px;
@@ -145,7 +102,7 @@ p {
 
 /* FAQ Page CSS */
 .faq {
-    background: url(../pages/pagesImages/typing.jpg) no-repeat center center fixed;
+    background: url(../pages/coverImages/typing.jpg) no-repeat center center fixed;
     background-size: cover;
     height: auto; 
     /* background-position-y: 10px; */

@@ -1,5 +1,5 @@
 import React from "react";
-import './MainPage.css';
+import './Home.css';
 
 const Home = () => {
     return(
@@ -35,13 +35,24 @@ const Home = () => {
             </div>
             <div className="cover"></div>
                 <div className="info">
-                    <p style={{padding: "1em", backgroundColor: "white", textAlign: "center"}}>Uptown Hope (UH) is a limited liability 
-                            company organized under the Laws of the State of Maryland. 
-                            We offer Health Care staff for a wide variety of positions
-                            <br />
-                            For a full list of positions we fill, see the Services page.
+                    <div className="info-image">
+                        <img src="../images/sunshine.jpg" alt="Random" style={{width: "700px", height: "500px"}} />
+                    </div>
+                    <p className="info-text">
+                        300 Redland Ct Suite 200 <br />
+                        Owings Mills, MD 21133 <br />
+                        (410) 363-9495 <br />
+                        uptownhopellc@gmail.com
+                        <br /><br />
                     </p>
                 </div>
+                <p className="info-bottom">
+                    Uptown Hope (UH) is a limited liability 
+                    company organized under the Laws of the State of Maryland. 
+                    We offer Health Care staff for a wide variety of positions
+                    <br /><br />
+                    For a full list of positions we fill, see the Services page.
+                </p>
             <div>
                 
             </div>

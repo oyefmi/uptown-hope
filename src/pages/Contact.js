@@ -18,7 +18,7 @@ const Contact = () => {
         <div className="contact">
             <div className="wrapper">
                 <div className="page-content">
-                    <Map location={location} zoomLevel={17}/>
+                    <Map location={location} zoomLevel={15}/>
                     <h2 id="title">Contact Us</h2>
                     <div className="contact_info">
                         <div className="uptown_hope">

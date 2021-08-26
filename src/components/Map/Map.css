@@ -1,11 +1,4 @@
-.map-h2 {
-    text-transform: uppercase;
-    font-size: 1rem;
-    padding: 20px;
-    padding-left: 10px;
-    text-align: center;
-  }
-  
+
   .google-map {
     padding-top: 10px;
     padding-bottom: 10px;
@@ -17,29 +10,25 @@
     /* display: flex; */
     align-items: center;
     width: 180px;
-    color: var(--main-blue);
+    color: rgba(230, 115, 14, 1);
   }
-  
-  .pin-icon {
-    font-size: 2rem;
-  }
-  
-  .pin-text {
-    width: 50%;
-    background-color: #0b2ca3;
-    font-weight: 600;
-    color: #ffffff;
-    font-size: 1.5em;
+
+  .marker {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 18px;
+    height: 18px;
+    background-color: rgba(6, 9, 167, 0.87);
+    border: 2px solid #fff;
+    border-radius: 100%;
+    user-select: none;
+    transform: translate(-50%, -50%);
   }
   
   @media screen and (min-width: 799px) {
     .google-map {
       height: 60vh;
-    }
-  
-    .map-h2 {
-      font-size: 1.3rem;
-      font-weight: 400;
     }
   
     .pin {
