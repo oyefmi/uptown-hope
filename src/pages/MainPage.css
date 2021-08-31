@@ -118,12 +118,12 @@ p {
 
 .contact_info {
     display: flex;
+    justify-content: center;
     padding: 1em 2em;
 }
 
 .uptown_hope {
-    width: 45%;
-    align-items: center;
+    width: 55%;
 }
 
 .uptown_hope p, a{

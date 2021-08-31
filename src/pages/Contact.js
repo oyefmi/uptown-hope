@@ -1,19 +1,34 @@
-import React from "react";
+import React, { useState } from "react";
 import { Container, Form, FormGroup, FormControl, FormLabel, Button } from 'react-bootstrap';
 import Map from '../components/Map/Map';
 import './MainPage.css';
 
-const location = {
-    address: 'Uptown Hope',
-    lat: 39.4253,
-    lng: -76.8113
-}
-
-const onSendClick = () => {
-    console.log('input sent');
-  }
 
 const Contact = () => {
+    const location = {
+        address: 'Uptown Hope',
+        lat: 39.4253,
+        lng: -76.8113
+    }
+    const [validated, setValidated] = useState(false);
+    const [contactInfo, setContactInfo] = useState({
+        name: "",
+        email: "",
+        phoneNumber: "",
+        description: ""
+    })
+    
+
+    const handleSubmit = (event) => {
+        const form = event.currentTarget;
+        if (form.checkValidity() === false) {
+            event.preventDefault();
+            event.stopPropagation();
+        }
+
+        setValidated(true);
+    }
+
     return(
         <div className="contact">
             <div className="wrapper">
@@ -31,27 +46,61 @@ const Contact = () => {
                             <a href = "mailto: info@uptownhope.com">info@uptownhope.com</a>
                         </div>
                         <Container>
-                            <Form>
+                            <Form noValidate validated={validated} onSubmit={handleSubmit}>
                                 <FormGroup>
                                     <FormLabel>Name</FormLabel>
-                                    <FormControl required={true} type="text" placeholder="Name *"></FormControl>
+                                    <FormControl 
+                                        required 
+                                        type="text" 
+                                        placeholder="Name *" 
+                                        onChange={(e) => setContactInfo({...contactInfo, name: e.target.value})}>
+                                    </FormControl>
+                                    <Form.Control.Feedback type="invalid">
+                                        Please provide a valid name.
+                                    </Form.Control.Feedback>
                                 </FormGroup>
                                 <FormGroup>
                                     <FormLabel>Email</FormLabel>
-                                    <FormControl required={true} type="text" placeholder="Email *"></FormControl>
+                                    <FormControl 
+                                        required 
+                                        type="email" 
+                                        placeholder="Email *"
+                                        onChange={(e) => setContactInfo({...contactInfo, email: e.target.value})}>                                            
+                                    </FormControl>
+                                    <Form.Control.Feedback type="invalid">
+                                        Please provide a valid email address
+                                    </Form.Control.Feedback>
                                 </FormGroup>
                                 <FormGroup>
                                     <FormLabel>Phone Number</FormLabel>
-                                    <FormControl required={true} type="text" placeholder="Phone Number *"></FormControl>
+                                    <FormControl 
+                                        required 
+                                        type="text" 
+                                        placeholder="xxxxxxxxxx" 
+                                        maxLength="10"
+                                        onChange={(e) => setContactInfo({...contactInfo, phoneNumber: e.target.value})}>
+                                    </FormControl>
+                                    <Form.Control.Feedback type="invalid">
+                                        Please provide a 10 digit phone number.
+                                    </Form.Control.Feedback>
                                 </FormGroup>
                                 <FormGroup>
-                                    <FormLabel>Subject</FormLabel>
-                                    <FormControl type="text" placeholder="Subject"></FormControl>
+                                    <FormLabel>Description</FormLabel>
+                                    <FormControl 
+                                        required
+                                        as="textarea" 
+                                        rows={4} 
+                                        placeholder="Message" 
+                                        onChange={(e) => setContactInfo({...contactInfo, description: e.target.value})}>                                            
+                                    </FormControl>
+                                    <Form.Control.Feedback type="invalid">
+                                        Give a short description of your need.
+                                    </Form.Control.Feedback>
                                 </FormGroup>
+                                <div className="contact_button">
+                                    <Button className="float-end" variant="outline-secondary" type="submit">Send</Button>
+                                </div>
                             </Form>
-                            <div className="contact_button">
-                                <Button className="float-end" variant="outline-secondary" onClick={onSendClick}>Send</Button>
-                            </div>
                         </Container>
                     </div>
                 </div>

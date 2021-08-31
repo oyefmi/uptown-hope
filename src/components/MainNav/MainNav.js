@@ -9,11 +9,9 @@ const MainNav = () => {
             <Navbar.Brand href="#home">
                 <img
                     src="../images/uptownhope_logo.jpeg"
+                    alt="Uptown Hope logo" 
                     width="100"
                     height="60"
-                    paddingLeft="1"
-                    className="d-inline-block align-top"
-                    alt="Uptown Hope logo" 
                 />
             </Navbar.Brand>
             <Navbar.Toggle aria-controls="responsive-navbar-nav" />

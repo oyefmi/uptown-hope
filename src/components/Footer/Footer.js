@@ -7,7 +7,7 @@ const Footer = () => {
         <footer className="footer-distributed">
 			<div className="footer-left">
 				<img
-                    src="/uptownhope_logo.jpeg"
+                    src="../images/uptownhope_logo.jpeg"
                     width="170"
                     height="100"
                     paddingLeft="1"
@@ -35,7 +35,7 @@ const Footer = () => {
 				</div>
 				<div>
 					<i className="fa fa-envelope"></i>
-					<p><a href="mailto:uptownhopellc@gmail.com">uptownhopellc@gmail.com</a></p>
+					<p><a href="mailto:info@uptownhope.com">info@uptownhope.com</a></p>
 				</div>
 			</div>
 			<div className="footer-right">

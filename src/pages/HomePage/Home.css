@@ -68,6 +68,17 @@ p {
     text-align: center;
 }
 
-.info-text {
-    
+.info-text{
+    font-size: 50px;
+}
+
+.info-text a:link {
+    color:rgba(230, 115, 14, 1);
+    font-size: 50px;
+    text-decoration: none;
+}
+
+.info-bottom {
+    background-color: #ffffff;
+    padding-bottom: 1em;
 }

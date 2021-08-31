@@ -21,7 +21,7 @@ const Employment = () => {
                                         Is your business short on staff? 
                                         Are you looking for staff to help jumpstart a new business venture? 
                                         Or are you just looking to shake things up in an unconventional way?
-                                        Whatever your Health Care staffing need, Uptown Hope can help. Click the link for infomation on how or how much!
+                                        Whatever your Health Care staffing need, Uptown Hope can help. Click below for infomation on how or how much!
                                     </Card.Text>
                                     <br />
                                     <Button variant="outline-secondary">Let Us Help</Button>

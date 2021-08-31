@@ -36,13 +36,13 @@ const Home = () => {
             <div className="cover"></div>
                 <div className="info">
                     <div className="info-image">
-                        <img src="../images/sunshine.jpg" alt="Random" style={{width: "700px", height: "500px"}} />
+                        <img src="../images/sunshine.jpg" alt="Random" style={{width: "700px", height: "500px", boxShadow: "12px 15px 5px grey"}} />
                     </div>
                     <p className="info-text">
                         300 Redland Ct Suite 200 <br />
                         Owings Mills, MD 21133 <br />
                         (410) 363-9495 <br />
-                        uptownhopellc@gmail.com
+                        <a href = "mailto: info@uptownhope.com">info@uptownhope.com</a>
                         <br /><br />
                     </p>
                 </div>
