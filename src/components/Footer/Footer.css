@@ -104,21 +104,22 @@ footer {
 .footer-distributed .footer-center p{
 	display: inline-block;
 	color: #0b2ca3;
-  	font-weight:400;
+  	font-weight: normal;
 	vertical-align: middle;
+	font-size: 20px;
 	margin:0;
 }
 
 .footer-distributed .footer-center p span{
 	display:block;
 	font-weight: normal;
-	font-size:14px;
+	font-size:20px;
 	line-height:2;
 }
 
 .footer-distributed .footer-center p a{
 	color:  #0b2ca3;
-	text-decoration: none;;
+	text-decoration: none;
 }
 
 .footer-distributed .footer-links a:before {
@@ -161,26 +162,19 @@ footer {
 	margin-top: 25px;
 }
 
-.footer-distributed .footer-icons a{
+.social-icons{
 	display: inline-block;
 	width: 35px;
 	height: 35px;
 	cursor: pointer;
-	background-color:  #33383b;
 	border-radius: 2px;
-
+	margin-right: 1rem;
 	font-size: 20px;
-	color: #ffffff;
-	text-align: center;
-	line-height: 35px;
-
-	margin-right: 3px;
-	margin-bottom: 5px;
 }
 
 /* If you don't want the footer to be responsive, remove these media queries */
 
-@media (max-width: 880px) {
+@media (max-width: 1200px) {
 
 	.footer-distributed{
 		font: bold 14px sans-serif;

@@ -5,11 +5,11 @@ import MainNav from './components/MainNav/MainNav';
 import Footer from './components/Footer/Footer';
 
 import Home from './pages/HomePage/Home';
-import About from './pages/About';
-import Services from './pages/Services';
-import Employment from './pages/Employment';
-import FAQ from './pages/FAQ';
-import Contact from './pages/Contact';
+import About from './pages/AboutPage/About';
+import Services from './pages/ServicesPage/Services';
+import Employment from './pages/EmploymentPage/Employment';
+import FAQ from './pages/FAQPage/FAQ';
+import Contact from './pages/ContactPage/Contact';
 
 class App extends Component {
   

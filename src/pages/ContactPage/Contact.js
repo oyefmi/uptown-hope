@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { Container, Form, FormGroup, FormControl, FormLabel, Button } from 'react-bootstrap';
-import Map from '../components/Map/Map';
-import './MainPage.css';
+import Map from '../../components/Map/Map';
+import './Contact.css';
 
 
 const Contact = () => {
@@ -36,7 +36,7 @@ const Contact = () => {
                     <Map location={location} zoomLevel={15}/>
                     <h2 id="title">Contact Us</h2>
                     <div className="contact_info">
-                        <div className="uptown_hope">
+                        <div className="uptown-hope">
                             <p style={{color: "rgba(230, 115, 14, 1)", fontWeight: "750"}}>Uptown Hope, LLC</p>
                             <p>300 Redland Court, Suite 200 
                             <br/>Owings Mills, MD 21117</p>

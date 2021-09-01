@@ -9,10 +9,11 @@ const Home = () => {
                 <p><em><strong>Positive Outlook, Open and Healthy Mind are the keys to success. 
                     <br/>Ability and Opportunity begins with Availability</strong></em>
                 </p>
-                <div className="wrapper-symbols">
+            </div>
+            <div className="cover-home"></div>
+            <div className="wrapper-symbols">
                     <div className="symbol-block">
                         <span>&#9774;</span>
-
                         <h3>Holistic</h3>
                         <p>approach to quality service provision</p>
                     </div>
@@ -32,12 +33,12 @@ const Home = () => {
                         <p>and assistance</p>
                     </div>
                 </div>
-            </div>
-            <div className="cover"></div>
                 <div className="info">
-                    <div className="info-image">
-                        <img src="../images/sunshine.jpg" alt="Random" style={{width: "700px", height: "500px", boxShadow: "12px 15px 5px grey"}} />
-                    </div>
+                    <img 
+                        className="info-image"
+                        src="../images/sunshine.jpg" 
+                        alt="Random" 
+                        />
                     <p className="info-text">
                         300 Redland Ct Suite 200 <br />
                         Owings Mills, MD 21133 <br />
@@ -51,7 +52,7 @@ const Home = () => {
                     company organized under the Laws of the State of Maryland. 
                     We offer Health Care staff for a wide variety of positions
                     <br /><br />
-                    For a full list of positions we fill, see the Services page.
+                    For a full list of positions we fill, see the <strong>Services</strong> page.
                 </p>
             <div>
                 

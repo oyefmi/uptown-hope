@@ -1,0 +1,28 @@
+p {
+    margin: auto;
+}
+
+.cover {
+    height: 60vh;
+}
+
+.wrapper {
+    background-color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.page-content {
+    text-align: left;
+    width: 70vw;
+    height: auto;
+}
+
+.faq {
+    background: url(../../pages/coverImages/typing.jpg) no-repeat center center fixed;
+    background-size: cover;
+    height: auto; 
+    /* background-position-y: 10px; */
+    position: relative;
+}

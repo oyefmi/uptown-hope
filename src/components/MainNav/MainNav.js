@@ -5,7 +5,7 @@ import './MainNav.css';
 
 const MainNav = () => {
     return(
-        <Navbar collapseOnSelect bg="light" expand="xl">
+        <Navbar collapseOnSelect bg="light" expand="lg">
             <Navbar.Brand href="#home">
                 <img
                     src="../images/uptownhope_logo.jpeg"

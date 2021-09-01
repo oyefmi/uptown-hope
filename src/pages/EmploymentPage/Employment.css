@@ -1,0 +1,87 @@
+p {
+    margin: auto;
+}
+
+.cover {
+    height: 60vh;
+}
+
+.wrapper {
+    background-color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.page-content {
+    text-align: left;
+    width: 70vw;
+    height: auto;
+}
+
+.employment {
+    background: url(../../pages/coverImages/application.jpg) no-repeat center center fixed;
+    background-size: cover;
+    height: auto; 
+    background-position-y: 40px;
+    position: relative;
+}
+
+.job-info {
+    margin: auto;
+    padding: 20px;
+}
+
+.cards-row {
+    padding: 2em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#card {
+    width: 350px;
+}
+
+.card-left {
+    padding-right: 1em;
+}
+
+.card-right {
+    padding-left: 1em;
+}
+
+.card-image-bus {
+    width: 348px;
+    height: 300px;
+}
+
+.card-image-con {
+    width: 348px;
+    height: 300px
+}
+
+@media (max-width: 950px) {
+    #card {
+        width: 30vw;
+        height: 45vh;
+    }
+    
+    .card-image-bus {
+        width: 29.8vw;
+        height: 20vh;
+    }
+    
+    .card-image-con {
+        width: 29.8vw;
+        height: 20vh
+    }
+
+    #card-title {
+        font-size: 2vw;
+    }
+
+    #card-text {
+        font-size: 1.5vw;
+    }
+}

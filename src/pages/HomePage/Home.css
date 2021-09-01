@@ -2,8 +2,8 @@ p {
     margin: auto;
 }
 
-.cover {
-    height: 60vh;
+.cover-home {
+    height: 65vh;
 }
 
 .wrapper {
@@ -23,7 +23,7 @@ p {
     background: url(../../pages/coverImages/uptownhope_bkgrd.png) no-repeat center center fixed;
     height: auto; 
     background-size: cover;
-    background-position-y: 40px;
+    background-position-y: 25px;
     position: relative;
     margin: auto;
 }
@@ -31,6 +31,7 @@ p {
 .top-block {
     background: rgba(230, 115, 14, 1);
     color:  #0b2ca3;
+    padding-bottom: .6em;
 }
 
 .top-block h1{
@@ -41,44 +42,89 @@ p {
 .wrapper-symbols {
     display: flex;
     justify-content: center;
+    background: #ffffff;
 }
 
 .symbol-block {
-    color:  #0b2ca3;
-    padding: 15px 90px;
+    color:  rgba(230, 115, 14, 1);
+    padding-bottom: 15px;
+    padding-right: 60px;
     font-weight: 500;
     max-width: 20%;
     vertical-align: top;
 }
 
 .symbol-block span {
+    color:rgba(230, 115, 14, 1);
     font-size: 50px;
 }
 
 .symbol-block h3 {
     font-weight: bold;
-    margin-top: 1rem;
+    /* margin-top: 1rem; */
     margin-bottom: auto;
 }
 
 .info {
-    display: flex;
     padding: 1em;
     background-color: #ffffff; 
     text-align: center;
 }
 
+.info-image {
+    width: 45vw;
+    height: 500px;
+    box-shadow: 12px 15px 5px #b4b4b4;
+}
+
 .info-text{
-    font-size: 50px;
+    font-size: 3vw;
 }
 
 .info-text a:link {
     color:rgba(230, 115, 14, 1);
-    font-size: 50px;
+    font-size: 3vw;
     text-decoration: none;
 }
 
 .info-bottom {
     background-color: #ffffff;
     padding-bottom: 1em;
+}
+
+@media (min-width: 1200px) {
+    .info {
+        display: flex;
+        padding: 1em 3em;
+        background-color: #ffffff; 
+        text-align: center;
+    }
+}
+
+@media (max-width: 1200px) {
+    .symbol-block span {
+        color:rgba(230, 115, 14, 1);
+        font-size: 3.9vw;
+    }
+
+    .symbol-block h3 {
+        font-weight: bold;
+        font-size: 2.2vw;
+        margin-bottom: auto;
+    }
+
+    .symbol-block p {
+        margin: auto;
+        font-size: 2.2vw;
+    }
+
+    .info-image {
+        width: 60vw;
+        height: 35vh;
+        box-shadow: 12px 15px 5px #b4b4b4;
+    }
+
+    .info-text{
+        padding-top: 1em;
+    }
 }
