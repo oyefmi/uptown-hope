@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import axios from 'axios';
 import { Container, Form, FormGroup, FormControl, FormLabel, Button } from 'react-bootstrap';
 import Map from '../../components/Map/Map';
 import './Contact.css';
@@ -18,6 +19,7 @@ const Contact = () => {
         description: ""
     })
     
+    
 
     const handleSubmit = (event) => {
         const form = event.currentTarget;
@@ -27,6 +29,20 @@ const Contact = () => {
         }
 
         setValidated(true);
+
+        axios({
+            method: "POST",
+            url: "http://localhost:3000/contact",
+            data: contactInfo
+        }).then((response) => {
+            if (response.data.status === 'success') {
+                alert("Messege Sent.");
+            } else if (response.data.status === 'fail') {
+                alert("Message failed to send.")
+            }
+        })
+
+        console.log(contactInfo);
     }
 
     return(
@@ -43,7 +59,7 @@ const Contact = () => {
                             <p>410-363-9495 (moblie)</p>
                             <p>443-326-5069 (cell)</p>
                             <p>410-363-9498 (fax)</p>
-                            <a href = "mailto: info@uptownhope.com">info@uptownhope.com</a>
+                            <a href = "mailto: info.uptownhope@gmail.com">info.uptownhope@gmail.com</a>
                         </div>
                         <Container>
                             <Form noValidate validated={validated} onSubmit={handleSubmit}>
