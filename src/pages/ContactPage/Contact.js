@@ -32,7 +32,7 @@ const Contact = () => {
 
         axios({
             method: "POST",
-            url: "http://localhost:3000/contact",
+            url: "http://localhost:3002/send",
             data: contactInfo
         }).then((response) => {
             if (response.data.status === 'success') {
