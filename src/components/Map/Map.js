@@ -4,11 +4,9 @@ import './Map.css';
 
 const LocationPin = ({ text }) => {
     return (
-      <div className="pin">
-        <h3>{text}</h3>
-        <div className="marker"
-            style={{cursor: 'pointer'}}></div>
-      </div>
+        <div className="marker">
+            <p className="title">{text}</p>
+        </div>
     );
 }
 
@@ -21,8 +19,8 @@ const Map = ({ location, zoomLevel }) => {
                 defaultCenter={location}
                 defaultZoom={zoomLevel}>
                 <LocationPin 
-                    latitude={location.lat}
-                    longitude={location.lng}
+                    lat={location.lat}
+                    lng={location.lng}
                     text={location.address} /> 
             </GoogleMapReact>
             </div>

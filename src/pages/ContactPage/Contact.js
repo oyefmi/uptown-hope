@@ -8,10 +8,10 @@ import './Contact.css';
 const Contact = () => {
     const location = {
         address: 'Uptown Hope',
-        lat: 39.4253,
-        lng: -76.8113
+        lat: 39.42452,
+        lng: -76.81139
     }
-    const [validated, setValidated] = useState(false);
+
     const [contactInfo, setContactInfo] = useState({
         name: "",
         email: "",
@@ -22,18 +22,18 @@ const Contact = () => {
     
 
     const handleSubmit = (event) => {
-        const form = event.currentTarget;
-        if (form.checkValidity() === false) {
-            event.preventDefault();
-            event.stopPropagation();
-        }
+        event.preventDefault();
 
-        setValidated(true);
+        const headers = {
+            'Accept': 'application/json',
+            'Content-Type': 'application/json'
+        }
 
         axios({
             method: "POST",
-            url: "http://localhost:3002/send",
-            data: contactInfo
+            url: "http://localhost:3001/send",
+            data: contactInfo,
+            headers: headers
         }).then((response) => {
             if (response.data.status === 'success') {
                 alert("Messege Sent.");
@@ -49,7 +49,7 @@ const Contact = () => {
         <div className="contact">
             <div className="wrapper">
                 <div className="page-content">
-                    <Map location={location} zoomLevel={15}/>
+                    <Map location={location} zoomLevel={17}/>
                     <h2 id="title">Contact Us</h2>
                     <div className="contact_info">
                         <div className="uptown-hope">
@@ -62,11 +62,12 @@ const Contact = () => {
                             <a href = "mailto: info.uptownhope@gmail.com">info.uptownhope@gmail.com</a>
                         </div>
                         <Container>
-                            <Form noValidate validated={validated} onSubmit={handleSubmit}>
+                            <Form noValidate onSubmit={handleSubmit}>
                                 <FormGroup>
                                     <FormLabel>Name</FormLabel>
                                     <FormControl 
                                         required 
+                                        value={contactInfo.name}
                                         type="text" 
                                         placeholder="Name *" 
                                         onChange={(e) => setContactInfo({...contactInfo, name: e.target.value})}>
