@@ -1,8 +1,7 @@
-import React, { useState } from "react";
-import axios from 'axios';
-import { Container, Form, FormGroup, FormControl, FormLabel, Button } from 'react-bootstrap';
+import React from "react";
 import Map from '../../components/Map/Map';
 import './Contact.css';
+import ContactForm from "../../components/ContactForm";
 
 
 const Contact = () => {
@@ -10,39 +9,6 @@ const Contact = () => {
         address: 'Uptown Hope',
         lat: 39.42452,
         lng: -76.81139
-    }
-
-    const [contactInfo, setContactInfo] = useState({
-        name: "",
-        email: "",
-        phoneNumber: "",
-        description: ""
-    })
-    
-    
-
-    const handleSubmit = (event) => {
-        event.preventDefault();
-
-        const headers = {
-            'Accept': 'application/json',
-            'Content-Type': 'application/json'
-        }
-
-        axios({
-            method: "POST",
-            url: "http://localhost:3001/send",
-            data: contactInfo,
-            headers: headers
-        }).then((response) => {
-            if (response.data.status === 'success') {
-                alert("Messege Sent.");
-            } else if (response.data.status === 'fail') {
-                alert("Message failed to send.")
-            }
-        })
-
-        console.log(contactInfo);
     }
 
     return(
@@ -61,64 +27,7 @@ const Contact = () => {
                             <p>410-363-9498 (fax)</p>
                             <a href = "mailto: info.uptownhope@gmail.com">info.uptownhope@gmail.com</a>
                         </div>
-                        <Container>
-                            <Form noValidate onSubmit={handleSubmit}>
-                                <FormGroup>
-                                    <FormLabel>Name</FormLabel>
-                                    <FormControl 
-                                        required 
-                                        value={contactInfo.name}
-                                        type="text" 
-                                        placeholder="Name *" 
-                                        onChange={(e) => setContactInfo({...contactInfo, name: e.target.value})}>
-                                    </FormControl>
-                                    <Form.Control.Feedback type="invalid">
-                                        Please provide a valid name.
-                                    </Form.Control.Feedback>
-                                </FormGroup>
-                                <FormGroup>
-                                    <FormLabel>Email</FormLabel>
-                                    <FormControl 
-                                        required 
-                                        type="email" 
-                                        placeholder="Email *"
-                                        onChange={(e) => setContactInfo({...contactInfo, email: e.target.value})}>                                            
-                                    </FormControl>
-                                    <Form.Control.Feedback type="invalid">
-                                        Please provide a valid email address
-                                    </Form.Control.Feedback>
-                                </FormGroup>
-                                <FormGroup>
-                                    <FormLabel>Phone Number</FormLabel>
-                                    <FormControl 
-                                        required 
-                                        type="text" 
-                                        placeholder="xxxxxxxxxx" 
-                                        maxLength="10"
-                                        onChange={(e) => setContactInfo({...contactInfo, phoneNumber: e.target.value})}>
-                                    </FormControl>
-                                    <Form.Control.Feedback type="invalid">
-                                        Please provide a 10 digit phone number.
-                                    </Form.Control.Feedback>
-                                </FormGroup>
-                                <FormGroup>
-                                    <FormLabel>Description</FormLabel>
-                                    <FormControl 
-                                        required
-                                        as="textarea" 
-                                        rows={4} 
-                                        placeholder="Message" 
-                                        onChange={(e) => setContactInfo({...contactInfo, description: e.target.value})}>                                            
-                                    </FormControl>
-                                    <Form.Control.Feedback type="invalid">
-                                        Give a short description of your need.
-                                    </Form.Control.Feedback>
-                                </FormGroup>
-                                <div className="contact_button">
-                                    <Button className="float-end" variant="outline-secondary" type="submit">Send</Button>
-                                </div>
-                            </Form>
-                        </Container>
+                        <ContactForm />
                     </div>
                 </div>
             </div>
@@ -127,3 +36,96 @@ const Contact = () => {
 }
 
 export default Contact;
+
+
+// const [contactInfo, setContactInfo] = useState({
+    //     name: "",
+    //     email: "",
+    //     phoneNumber: "",
+    //     description: ""
+    // })
+    
+    
+
+    // const handleSubmit = (event) => {
+    //     event.preventDefault();
+
+    //     const headers = {
+    //         'Accept': 'application/json',
+    //         'Content-Type': 'application/json'
+    //     }
+
+    //     axios({
+    //         method: "POST",
+    //         url: "http://localhost:3001/send",
+    //         data: contactInfo,
+    //         headers: headers
+    //     }).then((response) => {
+    //         if (response.data.status === 'success') {
+    //             alert("Messege Sent.");
+    //         } else if (response.data.status === 'fail') {
+    //             alert("Message failed to send.")
+    //         }
+    //     })
+
+    //     console.log(contactInfo);
+    // }
+
+/* <Container>
+    <Form noValidate onSubmit={handleSubmit}>
+        <FormGroup>
+            <FormLabel>Name</FormLabel>
+            <FormControl 
+                required 
+                value={contactInfo.name}
+                type="text" 
+                placeholder="*Full Name" 
+                onChange={(e) => setContactInfo({...contactInfo, name: e.target.value})}>
+            </FormControl>
+            <Form.Control.Feedback type="invalid">
+                Please provide a valid name.
+            </Form.Control.Feedback>
+        </FormGroup>
+        <FormGroup>
+            <FormLabel>Email</FormLabel>
+            <FormControl 
+                required 
+                type="email" 
+                placeholder="*Email"
+                onChange={(e) => setContactInfo({...contactInfo, email: e.target.value})}>                                            
+            </FormControl>
+            <Form.Control.Feedback type="invalid">
+                Please provide a valid email address
+            </Form.Control.Feedback>
+        </FormGroup>
+        <FormGroup>
+            <FormLabel>Phone Number</FormLabel>
+            <FormControl 
+                required 
+                type="text" 
+                placeholder="*(xxx)xxx-xxxx" 
+                maxLength="13"
+                onChange={(e) => setContactInfo({...contactInfo, phoneNumber: e.target.value})}>
+            </FormControl>
+            <Form.Control.Feedback type="invalid">
+                Please provide a 10 digit phone number.
+            </Form.Control.Feedback>
+        </FormGroup>
+        <FormGroup>
+            <FormLabel>Description</FormLabel>
+            <FormControl 
+                required
+                as="textarea" 
+                rows={4} 
+                placeholder="*Message" 
+                onChange={(e) => setContactInfo({...contactInfo, description: e.target.value})}>                                            
+            </FormControl>
+            <Form.Control.Feedback type="invalid">
+                Give a short description of your need.
+            </Form.Control.Feedback>
+        </FormGroup>
+        <div className="contact_button">
+            <Button className="float-end" variant="outline-secondary" type="submit">Send</Button>
+        </div>
+    </Form>
+</Container> */
