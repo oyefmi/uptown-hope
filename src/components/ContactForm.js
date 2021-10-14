@@ -33,7 +33,7 @@ const ContactForm = () => {
 
                         axios({
                             method: "POST",
-                            url: "http://localhost:3001/send",
+                            url: "https://radiant-basin-91423.herokuapp.com/send",
                             data: JSON.stringify(values, null, 2),
                             headers: headers
                         }).then((response) => {
