@@ -3,7 +3,7 @@ p {
 }
 
 .cover-home {
-    height: 65vh;
+    height: 68vh;
 }
 
 .wrapper {
@@ -102,29 +102,40 @@ p {
 }
 
 @media (max-width: 1200px) {
+    .main {
+        background: url(../../pages/coverImages/uptownhope_bkgrd.png) no-repeat center center fixed;
+        background-size: cover;
+        
+    }
+
     .symbol-block span {
         color:rgba(230, 115, 14, 1);
         font-size: 3.9vw;
     }
 
     .symbol-block h3 {
-        font-weight: bold;
-        font-size: 2.2vw;
+        font-weight: bolder;
+        font-size: 3vw;
         margin-bottom: auto;
     }
 
     .symbol-block p {
         margin: auto;
-        font-size: 2.2vw;
+        font-size: 2.7vw;
     }
 
     .info-image {
-        width: 60vw;
-        height: 35vh;
+        width: 63vw;
+        height: 29vh;
         box-shadow: 12px 15px 5px #b4b4b4;
     }
 
     .info-text{
-        padding-top: 1em;
+        font-size: 3.5vw;
+        padding-top: 1.5em;
+    }
+
+    .info-bottom{
+        font-size: 3.3vw;
     }
 }

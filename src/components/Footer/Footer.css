@@ -178,6 +178,7 @@ footer {
 
 	.footer-distributed{
 		font: bold 14px sans-serif;
+		padding-right: 3.5rem;
 	}
 
 	.footer-distributed .footer-left,
@@ -194,6 +195,14 @@ footer {
 		margin-left: 0;
 		padding-top: 5em;
 		padding-bottom: 10px;
+	}
+
+	.footer-distributed .footer-right{
+		padding-left: 3em;
+	}
+
+	.footer-distributed .footer-icons{
+		padding-left: 1em;
 	}
 
 }
