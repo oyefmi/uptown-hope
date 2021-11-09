@@ -2,6 +2,7 @@ import React from "react";
 import Map from '../../components/Map/Map';
 import './Contact.css';
 import ContactForm from "../../components/ContactForm";
+import { Button } from "react-bootstrap";
 
 
 const Contact = () => {
@@ -16,6 +17,9 @@ const Contact = () => {
             <div className="wrapper">
                 <div className="page-content">
                     <Map location={location} zoomLevel={17}/>
+                    <div className="directions">
+                        <Button className="float-end" variant="success" href="https://goo.gl/maps/Vw2s6sVSfVeaSy4v9">Get Directions</Button>
+                    </div>
                     <h2 id="title">Contact Us</h2>
                     <div className="contact_info">
                         <div className="uptown-hope">

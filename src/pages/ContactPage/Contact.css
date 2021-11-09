@@ -42,6 +42,10 @@ p {
     
 }
 
+.directions {
+    padding-bottom: 3em;
+}
+
 @media (max-width: 1000px) {
     .uptown-hope p {
         font-size: 2.2vw;
