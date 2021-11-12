@@ -1,5 +1,5 @@
 import React from 'react';
-import { Navbar, Nav } from 'react-bootstrap';
+import { Navbar, Nav, NavDropdown } from 'react-bootstrap';
 import { LinkContainer } from 'react-router-bootstrap';
 import './MainNav.css';
 
@@ -26,14 +26,19 @@ const MainNav = () => {
                     <LinkContainer to="/services">
                         <Nav.Link>Services</Nav.Link>
                     </LinkContainer>
-                    <LinkContainer to="/employment">
-                        <Nav.Link>Employment</Nav.Link>
+                    <NavDropdown title="Employment">
+                        <LinkContainer to="/employment/prospective-employee">
+                            <NavDropdown.Item>Prospective Employee</NavDropdown.Item>
+                        </LinkContainer>
+                        <LinkContainer to="/employment/current-employee">
+                            <NavDropdown.Item>Current Employee</NavDropdown.Item>
+                        </LinkContainer>        
+                    </NavDropdown>
+                    <LinkContainer to="/contact">
+                        <Nav.Link>Contact</Nav.Link>
                     </LinkContainer>
                     <LinkContainer to="/faq">
                         <Nav.Link>FAQ</Nav.Link>
-                    </LinkContainer>
-                    <LinkContainer to="/contact">
-                        <Nav.Link>Contact</Nav.Link>
                     </LinkContainer>
                 </Nav>
             </Navbar.Collapse>

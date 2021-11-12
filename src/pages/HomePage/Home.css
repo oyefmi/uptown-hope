@@ -3,7 +3,7 @@ p {
 }
 
 .cover-home {
-    height: 65vh;
+    height: 75vh;
 }
 
 .wrapper {
@@ -21,9 +21,9 @@ p {
 
 .main {
     background: url(../../pages/coverImages/uptownhope_bkgrd.png) no-repeat center center fixed;
-    height: auto; 
+    /* height: auto;  */
     background-size: cover;
-    background-position-y: 25px;
+    background-position-y: 35px;
     position: relative;
     margin: auto;
 }

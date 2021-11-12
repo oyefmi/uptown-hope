@@ -19,8 +19,8 @@ const Footer = () => {
 					<a href="/about">About</a>
 					<a href="/services">Services</a>
 					<a href="/employment">Employment</a>
-					<a href="/faq">FAQ</a>
 					<a href="/contact">Contact</a>
+					<a href="/faq">FAQ</a>
 				</p>
 				<p className="footer-company-name">© 2017 Uptown Hope. All Rights Reserved</p>
 			</div>

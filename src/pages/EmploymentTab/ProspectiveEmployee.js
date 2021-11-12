@@ -2,13 +2,13 @@ import React from "react";
 import { Card } from 'react-bootstrap';
 import './Employment.css'
 
-const Employment = () => {
+const ProspectiveEmployee = () => {
     return(
-        <div className="employment">
+        <div className="pe-employment">
             <div className="cover"></div>
             <div className="wrapper">
                 <div className="page-content">
-                    <h2 id="title">Employment</h2>
+                    <h2 id="title">Prospective Employees and Clients</h2>
                     <div className="job-info">
                         {/* <p>Anyone interested in employment with Uptown Hope should send an email to info@uptownhope.com.
                             Additionally, if you would like to send your resume as well, 
@@ -48,10 +48,10 @@ const Employment = () => {
                             </div>
                         </div>
                     </div>
-                    </div>
+                </div>
             </div>
         </div>
     );
 }
 
-export default Employment;
+export default ProspectiveEmployee;

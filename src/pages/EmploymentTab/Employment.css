@@ -19,11 +19,19 @@ p {
     height: auto;
 }
 
-.employment {
+.pe-employment {
     background: url(../../pages/coverImages/application.jpg) no-repeat center center fixed;
     background-size: cover;
     height: auto; 
     background-position-y: 40px;
+    position: relative;
+}
+
+.ce-employment {
+    background: url(../../pages/coverImages/directcare.jpg) no-repeat center center fixed;
+    background-size: cover;
+    height: auto; 
+    background-position-y: -85px;
     position: relative;
 }
 
