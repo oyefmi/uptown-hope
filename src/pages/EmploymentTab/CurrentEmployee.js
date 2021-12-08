@@ -8,7 +8,7 @@ const CurrentEmployee = () => {
     const [showTS, setShowTS] = useState(false);
     
     const showTimesheet = () => {
-        setShowTS = true
+        setShowTS(true);
     }
 
     return (
@@ -28,7 +28,7 @@ const CurrentEmployee = () => {
                         <Button 
                             variant="success" 
                             type="button" 
-                            onClick={() => showTimesheet}>Fill Out Timesheet
+                            onClick={showTimesheet}>{ showTS ? <Timesheet /> : null } Fill Out Timesheet 
                         </Button>
                     </div>
             </div>

@@ -8,11 +8,18 @@
 .week-one {
     width: 50vw;
     margin-right: 1em;
-    display: grid;
-    
+    display: grid;   
 }
 
 .week-two {
     width: 50vw;
     display: grid;
+}
+
+.time {
+    display: flex;
+}
+
+.tod {
+    max-width: 3.5em;
 }

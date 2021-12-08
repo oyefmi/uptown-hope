@@ -1,5 +1,5 @@
 import React from 'react';
-import { Container, Form, Row, FormLabel, FormControl, Col } from 'react-bootstrap';
+import { Container, Form, Row, FormLabel, Col, Button } from 'react-bootstrap';
 import './Timesheet.css'
 
 const Timesheet = () => {
@@ -9,13 +9,13 @@ const Timesheet = () => {
             <Form>
                 <Row>
                     <FormLabel>Name</FormLabel>
-                    <FormControl 
+                    <Form.Control 
                         type="text" 
                         placeholder="*Full Name" />
                 </Row>
                 <Row>
                     <FormLabel>Unit</FormLabel>
-                    <FormControl 
+                    <Form.Control 
                         type="text" 
                         placeholder="Unit" />
                 </Row>
@@ -29,50 +29,141 @@ const Timesheet = () => {
                             Sun
                         </Form.Label>
                         <Col>
-                            <Form.Control type="text" placeholder="Start" /> to
-                            <Form.Control type="text" placeholder="End" />
+                            <div className='time'>
+                                <Form.Control type="text" placeholder="Start" />
+                                <Form.Control as="select" className="tod">
+                                    <option>am</option>
+                                    <option>pm</option>
+                                </Form.Control>
+                            </div>
+                            to
+                            <div className='time'>
+                                <Form.Control type="text" placeholder="End" />
+                                <Form.Control as="select" className="tod">
+                                    <option>am</option>
+                                    <option>pm</option>
+                                </Form.Control>
+                            </div>
                         </Col><br />
                         <Form.Label column>
                             Mon
                         </Form.Label>
                         <Col>
-                            <Form.Control type="text" placeholder="Start" /> to
-                            <Form.Control type="text" placeholder="End" />
+                            <div className='time'>
+                                <Form.Control type="text" placeholder="Start" />
+                                <Form.Control as="select" className="tod">
+                                    <option>am</option>
+                                    <option>pm</option>
+                                </Form.Control>
+                            </div>
+                            to
+                            <div className='time'>
+                                <Form.Control type="text" placeholder="End" />
+                                <Form.Control as="select" className="tod">
+                                    <option>am</option>
+                                    <option>pm</option>
+                                </Form.Control>
+                            </div>
                         </Col><br />
                         <Form.Label column>
                             Tues
                         </Form.Label>
                         <Col>
-                            <Form.Control type="text" placeholder="Start" /> to
-                            <Form.Control type="text" placeholder="End" />
+                            <div className='time'>
+                                <Form.Control type="text" placeholder="Start" />
+                                <Form.Control as="select" className="tod">
+                                    <option>am</option>
+                                    <option>pm</option>
+                                </Form.Control>
+                            </div>
+                            to
+                            <div className='time'>
+                                <Form.Control type="text" placeholder="End" />
+                                <Form.Control as="select" className="tod">
+                                    <option>am</option>
+                                    <option>pm</option>
+                                </Form.Control>
+                            </div>
                         </Col><br />
                         <Form.Label column>
                             Wed
                         </Form.Label>
                         <Col>
-                            <Form.Control type="text" placeholder="Start" /> to
-                            <Form.Control type="text" placeholder="End" />
+                            <div className='time'>
+                                <Form.Control type="text" placeholder="Start" />
+                                <Form.Control as="select" className="tod">
+                                    <option>am</option>
+                                    <option>pm</option>
+                                </Form.Control>
+                            </div>
+                            to
+                            <div className='time'>
+                                <Form.Control type="text" placeholder="End" />
+                                <Form.Control as="select" className="tod">
+                                    <option>am</option>
+                                    <option>pm</option>
+                                </Form.Control>
+                            </div>
                         </Col><br />
                         <Form.Label column>
                             Thurs
                         </Form.Label>
                         <Col>
-                            <Form.Control type="text" placeholder="Start" /> to
-                            <Form.Control type="text" placeholder="End" />
+                            <div className='time'>
+                                <Form.Control type="text" placeholder="Start" />
+                                <Form.Control as="select" className="tod">
+                                    <option>am</option>
+                                    <option>pm</option>
+                                </Form.Control>
+                            </div>
+                            to
+                            <div className='time'>
+                                <Form.Control type="text" placeholder="End" />
+                                <Form.Control as="select" className="tod">
+                                    <option>am</option>
+                                    <option>pm</option>
+                                </Form.Control>
+                            </div>
                         </Col><br />
                         <Form.Label column>
                             Fri
                         </Form.Label>
                         <Col>
-                            <Form.Control type="text" placeholder="Start" /> to
-                            <Form.Control type="text" placeholder="End" />
+                            <div className='time'>
+                                <Form.Control type="text" placeholder="Start" />
+                                <Form.Control as="select" className="tod">
+                                    <option>am</option>
+                                    <option>pm</option>
+                                </Form.Control>
+                            </div>
+                            to
+                            <div className='time'>
+                                <Form.Control type="text" placeholder="End" />
+                                <Form.Control as="select" className="tod">
+                                    <option>am</option>
+                                    <option>pm</option>
+                                </Form.Control>
+                            </div>
                         </Col><br />
                         <Form.Label column>
                             Sat
                         </Form.Label>
                         <Col>
-                            <Form.Control type="text" placeholder="Start" /> to
-                            <Form.Control type="text" placeholder="End" />
+                            <div className='time'>
+                                <Form.Control type="text" placeholder="Start" />
+                                <Form.Control as="select" className="tod">
+                                    <option>am</option>
+                                    <option>pm</option>
+                                </Form.Control>
+                            </div>
+                            to
+                            <div className='time'>
+                                <Form.Control type="text" placeholder="End" />
+                                <Form.Control as="select" className="tod">
+                                    <option>am</option>
+                                    <option>pm</option>
+                                </Form.Control>
+                            </div>
                         </Col>
                     </Form.Group>
                     <Form.Group as={Row} className="week-two">
@@ -83,54 +174,148 @@ const Timesheet = () => {
                             Sun
                         </Form.Label>
                         <Col>
-                            <Form.Control type="text" placeholder="Start" /> to
-                            <Form.Control type="text" placeholder="End" />
+                            <div className='time'>
+                                <Form.Control type="text" placeholder="Start" />
+                                <Form.Control as="select" className="tod">
+                                    <option>am</option>
+                                    <option>pm</option>
+                                </Form.Control>
+                            </div>
+                            to
+                            <div className='time'>
+                                <Form.Control type="text" placeholder="End" />
+                                <Form.Control as="select" className="tod">
+                                    <option>am</option>
+                                    <option>pm</option>
+                                </Form.Control>
+                            </div>
                         </Col><br />
                         <Form.Label column>
                             Mon
                         </Form.Label>
                         <Col>
-                            <Form.Control type="text" placeholder="Start" /> to
-                            <Form.Control type="text" placeholder="End" />
+                            <div className='time'>
+                                <Form.Control type="text" placeholder="Start" />
+                                <Form.Control as="select" className="tod">
+                                    <option>am</option>
+                                    <option>pm</option>
+                                </Form.Control>
+                            </div>
+                            to
+                            <div className='time'>
+                                <Form.Control type="text" placeholder="End" />
+                                <Form.Control as="select" className="tod">
+                                    <option>am</option>
+                                    <option>pm</option>
+                                </Form.Control>
+                            </div>
                         </Col><br />
                         <Form.Label column>
                             Tues
                         </Form.Label>
                         <Col>
-                            <Form.Control type="text" placeholder="Start" /> to
-                            <Form.Control type="text" placeholder="End" />
+                            <div className='time'>
+                                <Form.Control type="text" placeholder="Start" />
+                                <Form.Control as="select" className="tod">
+                                    <option>am</option>
+                                    <option>pm</option>
+                                </Form.Control>
+                            </div>
+                            to
+                            <div className='time'>
+                                <Form.Control type="text" placeholder="End" />
+                                <Form.Control as="select" className="tod">
+                                    <option>am</option>
+                                    <option>pm</option>
+                                </Form.Control>
+                            </div>
                         </Col><br />
                         <Form.Label column>
                             Wed
                         </Form.Label>
                         <Col>
-                            <Form.Control type="text" placeholder="Start" /> to
-                            <Form.Control type="text" placeholder="End" />
+                            <div className='time'>
+                                <Form.Control type="text" placeholder="Start" />
+                                <Form.Control as="select" className="tod">
+                                    <option>am</option>
+                                    <option>pm</option>
+                                </Form.Control>
+                            </div>
+                            to
+                            <div className='time'>
+                                <Form.Control type="text" placeholder="End" />
+                                <Form.Control as="select" className="tod">
+                                    <option>am</option>
+                                    <option>pm</option>
+                                </Form.Control>
+                            </div>
                         </Col><br />
                         <Form.Label column>
                             Thurs
                         </Form.Label>
                         <Col>
-                            <Form.Control type="text" placeholder="Start" /> to
-                            <Form.Control type="text" placeholder="End" />
+                            <div className='time'>
+                                <Form.Control type="text" placeholder="Start" />
+                                <Form.Control as="select" className="tod">
+                                    <option>am</option>
+                                    <option>pm</option>
+                                </Form.Control>
+                            </div>
+                            to
+                            <div className='time'>
+                                <Form.Control type="text" placeholder="End" />
+                                <Form.Control as="select" className="tod">
+                                    <option>am</option>
+                                    <option>pm</option>
+                                </Form.Control>
+                            </div>
                         </Col><br />
                         <Form.Label column>
                             Fri
                         </Form.Label>
                         <Col>
-                            <Form.Control type="text" placeholder="Start" /> to
-                            <Form.Control type="text" placeholder="End" />
+                            <div className='time'>
+                                <Form.Control type="text" placeholder="Start" />
+                                <Form.Control as="select" className="tod">
+                                    <option>am</option>
+                                    <option>pm</option>
+                                </Form.Control>
+                            </div>
+                            to
+                            <div className='time'>
+                                <Form.Control type="text" placeholder="End" />
+                                <Form.Control as="select" className="tod">
+                                    <option>am</option>
+                                    <option>pm</option>
+                                </Form.Control>
+                            </div>
                         </Col><br />
                         <Form.Label column>
                             Sat
                         </Form.Label>
                         <Col>
-                            <Form.Control type="text" placeholder="Start" /> to
-                            <Form.Control type="text" placeholder="End" />
+                            <div className='time'>
+                                <Form.Control type="text" placeholder="Start" />
+                                <Form.Control as="select" className="tod">
+                                    <option>am</option>
+                                    <option>pm</option>
+                                </Form.Control>
+                            </div>
+                            to
+                            <div className='time'>
+                                <Form.Control type="text" placeholder="End" />
+                                <Form.Control as="select" className="tod">
+                                    <option>am</option>
+                                    <option>pm</option>
+                                </Form.Control>
+                            </div>
                         </Col>
                     </Form.Group>
                 </Container>
             </Form>
+            <br />
+            <Button className="float-end" variant="outline-secondary">Save Draft</Button>
+            <Button className="float-end" variant="outline-secondary">Submit</Button>
         </Container>
     );
 }
