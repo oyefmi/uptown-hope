@@ -21,7 +21,7 @@ p {
 
 .service-page {
     background: url(../../pages/coverImages/Servicespage_image.jpg) no-repeat center center fixed;
-    /* width: 100vw; */
+    width: 100vw;
     height: auto; 
     background-size: cover;
     background-position-y: 10px;
@@ -43,4 +43,13 @@ p {
     margin: auto;
     padding: 20px;
     background-color: #ffffff;
+}
+
+@media (max-width: 600px) {
+    .service-page {
+        background: url(../../pages/coverImages/Servicespage_image.jpg) no-repeat center center fixed;
+        background-size: cover;
+        background-position-y: 10px;
+        position: relative;
+    }
 }

@@ -48,3 +48,16 @@ p {
     display: flex;
     background-color: #ffffff;
 }
+
+@media (max-width: 600px) {
+    .about {
+        background: url(../../pages/coverImages/group_photo.jpg) no-repeat center center fixed;
+        background-size: cover;
+        position: relative;
+        height: auto;
+    }
+
+    .vis-val {
+        display: inline;
+    }
+}

@@ -62,6 +62,14 @@ p {
 }
 
 @media (max-width: 950px) {
+    .employment {
+        background: url(../../pages/coverImages/application.jpg) no-repeat center center fixed;
+        background-size: cover;
+        height: auto; 
+        background-position-y: 40px;
+        position: relative;
+    }
+
     #card {
         width: 30vw;
         height: 45vh;
@@ -83,5 +91,22 @@ p {
 
     #card-text {
         font-size: 1.5vw;
+    }
+}
+
+@media (max-width: 550px) {
+    #card {
+        width: 30vw;
+        height: 30vh;
+    }
+
+    .card-image-bus {
+        width: 29.8vw;
+        height: 20vh;
+    }
+    
+    .card-image-con {
+        width: 29.8vw;
+        height: 20vh
     }
 }
