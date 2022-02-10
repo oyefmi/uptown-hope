@@ -16,7 +16,7 @@ const Contact = () => {
         <div className="contact">
             <div className="wrapper">
                 <div className="page-content">
-                    <Map location={location} zoomLevel={17}/>
+                    <Map location={location} zoomLevel={17} className="map"/>
                     <div className="directions">
                         <Button className="float-end" variant="success" href="https://goo.gl/maps/Vw2s6sVSfVeaSy4v9">Get Directions</Button>
                     </div>

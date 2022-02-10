@@ -48,11 +48,16 @@ p {
 
 @media (max-width: 1000px) {
     .uptown-hope p {
-        font-size: 2.2vw;
+        font-size: 3.2vw;
     } 
 
     .uptown-hope a:link {
-        font-size: 2.2vw;
+        font-size: 3.4vw;
+    }
+    
+    .container {
+        font-size: 4vw;
+        padding-top: 1em;
     }
 
 }
@@ -67,5 +72,12 @@ p {
     .uptown-hope {
         width: 70%;
         text-align: left;
+    }
+}
+
+@media (max-width: 800px) {
+    .google-map {
+        height: 50vh;
+        width: auto;
     }
 }
