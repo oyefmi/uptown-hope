@@ -44,21 +44,17 @@ const Footer = () => {
 				</p>
 				<div className="footer-icons">
 					<div className="social-icons">
-						<SocialIcon url="" network="linkedin" />
+						<SocialIcon className="linkedin" url="https://linkedin.com/company/uptown-hope-llc/" network="linkedin" />
 					</div>
 					<div className="social-icons">
 						<SocialIcon url="" network="facebook" />
 					</div>
-					<div className="social-icons">
+					{/* <div className="social-icons">
 						
 					</div>
 					<div className="social-icons">
 						
-					</div>
-					
-					
-					
-					
+					</div> */}
 				</div>
 			</div>
 		</footer>
