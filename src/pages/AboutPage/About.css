@@ -50,7 +50,7 @@ p {
 }
 
 @media (max-width: 600px) {
-    .about {
+    .cover {
         background: url(../../pages/coverImages/group_photo.jpg) no-repeat center center fixed;
         background-size: cover;
         position: relative;
