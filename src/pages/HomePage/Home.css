@@ -22,6 +22,9 @@ p {
 .main {
     background: url(../../pages/coverImages/uptownhope_bkgrd.png) no-repeat center center fixed;
     background-size: cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
     background-position-y: 20px;
     position: relative;
     margin: auto;
@@ -91,7 +94,7 @@ p {
     padding-bottom: 1em;
 }
 
-@media (min-width: 1200px) {
+@media screen and (min-width: 1200px) {
     .info {
         display: flex;
         padding: 1em 3em;
@@ -100,7 +103,7 @@ p {
     }
 }
 
-@media (max-width: 1200px) {
+@media screen and (max-width: 1200px) {
     .symbol-block span {
         color:rgba(230, 115, 14, 1);
         font-size: 3.9vw;
@@ -128,12 +131,15 @@ p {
     }
 }
 
-@media (max-width: 600px) {
+@media screen and (max-width: 920px) {
     .main {
-        background: url(../../pages/coverImages/uptownhope_bkgrd.png) no-repeat center center fixed;
-        background-size: cover;
-        background-position-y: 75px;
-        height: auto;
+        background: url(../../pages/coverImages/uptownhope_bkgrd.png) no-repeat center center;
+        background-size: auto;
+        -webkit-background-size: auto;
+        -moz-background-size: auto;
+        -o-background-size: auto;
+        background-position-y: 40px;
+        position: relative;
     }
 
     .symbol-block span {
