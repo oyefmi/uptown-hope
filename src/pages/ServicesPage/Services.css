@@ -45,11 +45,14 @@ p {
     background-color: #ffffff;
 }
 
-@media (max-width: 600px) {
+@media screen and (max-width: 900px) {
     .service-page {
-        background: url(../../pages/coverImages/Servicespage_image.jpg) no-repeat center center fixed;
-        background-size: cover;
-        background-position-y: 10px;
+        background: url(../../pages/coverImages/Servicespage_image.jpg) no-repeat center center;
+        background-size: 980px 1000px;
+        -webkit-background-size: 980px 1000px;
+        -moz-background-size: 980px 1000px;
+        -o-background-size: 980px 1000px;
+        background-position-y: -50px;
         position: relative;
     }
 }

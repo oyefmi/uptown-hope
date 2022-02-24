@@ -49,12 +49,20 @@ p {
     background-color: #ffffff;
 }
 
-@media (max-width: 600px) {
-    .cover {
-        background: url(../../pages/coverImages/group_photo.jpg) no-repeat center center fixed;
-        background-size: cover;
+@media screen and (max-width: 920px) {
+    .about {
+        background: url(../../pages/coverImages/group_photo.jpg) no-repeat center center;
+        background-size: 950px 1000px;
+        -webkit-background-size: 950px 1000px;
+        -moz-background-size: 950px 1000px;
+        -o-background-size: 950px 1000px;
+        background-position-y: -200px;
         position: relative;
-        height: auto;
+    }
+
+    .cover {
+        width: 20vw;
+        height: 30vh;
     }
 
     .vis-val {

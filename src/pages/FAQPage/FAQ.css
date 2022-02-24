@@ -26,3 +26,15 @@ p {
     /* background-position-y: 10px; */
     position: relative;
 }
+
+@media screen and (max-width: 910px) {
+    .faq {
+        background: url(../../pages/coverImages/typing.jpg) no-repeat center center;
+        background-size: 970px 1000px;
+        -webkit-background-size: 970px 1000px;
+        -moz-background-size: 970px 1000px;
+        -o-background-size: 970px 1000px;
+        background-position-y: -295px;
+        position: relative;
+    }
+}
