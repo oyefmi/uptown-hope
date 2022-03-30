@@ -27,7 +27,7 @@ const Footer = () => {
 			<div className="footer-center">
 				<div>
 					<i className="fa fa-map-marker"></i>
-					<p><span>300 Redland Ct Suite 200</span> Owings Mills, MD 21133</p>
+					<p><span>300 Redland Ct., Suite 200</span> Owings Mills, MD 21117</p>
 				</div>
 				<div>
 					<i className="fa fa-phone"></i>

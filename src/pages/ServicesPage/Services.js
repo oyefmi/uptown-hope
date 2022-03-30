@@ -11,12 +11,12 @@ const Services = () => {
                         <h2 id="title">Services</h2>
                         <p className="services-text">
                            Health Care staff agency providing temporary staff support 
-                           or assistance to the following health care facilities
+                           or assistance to the following facilities:
                             <br />
                             <br />
                             <ul>
                                 <li>Addiction Treatment Centers</li>
-                                <li>Create an environment where clients are treated with respect and dignity.</li>
+                                <li>Adult and Medical Day Care Centers</li>
                                 <li>Assisted Living Centers</li>
                                 <li>Behavioral Health Facilities/Centers</li>
                                 <li>Community Agencies</li>
@@ -27,7 +27,8 @@ const Services = () => {
                                         <li>Self-Directed Services Participants</li>
                                         <li>Community Pathways Waiver</li>
                                         <li>Autism Waiver</li>
-                                        <li>Veteran Directed Care Program (Formerly VD-HCBS)</li>
+                                        <li>Other vocational day programs, including Community Development Services</li>
+                                        <li>Employment Support Programs</li>
                                     </ul>
                                 </li>
                                 <li>Domiciliary Care Settings</li>
@@ -43,7 +44,7 @@ const Services = () => {
                                 <li>School Systems</li>
                                 <li>Skilled Nursing Facilities</li>
                                 <li>Title V Schools</li>
-                                <li>Treatment and Transitional Hosuing</li>
+                                <li>Treatment and Transitional Housing</li>
                             </ul>
                         </p>
                     </div>

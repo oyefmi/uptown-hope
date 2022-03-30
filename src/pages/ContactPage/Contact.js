@@ -26,7 +26,7 @@ const Contact = () => {
                             <p style={{color: "rgba(230, 115, 14, 1)", fontWeight: "750"}}>Uptown Hope, LLC</p>
                             <p>300 Redland Court, Suite 200 
                             <br/>Owings Mills, MD 21117</p>
-                            <p>410-363-9495 (moblie)</p>
+                            <p>410-363-9495 (office)</p>
                             <p>443-326-5069 (cell)</p>
                             <p>410-363-9498 (fax)</p>
                             <a href = "mailto: info.uptownhope@gmail.com">info.uptownhope@gmail.com</a>
