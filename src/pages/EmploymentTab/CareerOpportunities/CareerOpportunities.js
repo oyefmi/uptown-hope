@@ -1,8 +1,8 @@
 import React from "react";
-import '/Users/michael/UptownHope/uptown-hope/src/pages/EmploymentTab/CareerOpportunities/CareerOpportunies.css';
+import './CareerOpportunities.css';
 
 const CareerOpportunities = () => {
-    
+
     return (
         <div className="career">
             <div className="cover"></div>
