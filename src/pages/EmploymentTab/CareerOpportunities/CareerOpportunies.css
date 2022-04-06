@@ -1,0 +1,23 @@
+.career {
+    background: url(../../../pages/coverImages/application.jpg) no-repeat center center fixed;
+    background-size: cover;
+    height: auto; 
+    background-position-y: 40px;
+    position: relative;
+}
+
+.cover {
+    height: 60vh;
+}
+
+@media (max-width: 950px) {
+    .career{        
+        background: url(../../../pages/coverImages/application.jpg) no-repeat center center;
+        background-size: 950px 1000px;
+        -webkit-background-size: 950px 1000px;
+        -moz-background-size: 950px 1000px;
+        -o-background-size: 950px 1000px;
+        background-position-y: -150px;
+        position: relative;
+    }
+}

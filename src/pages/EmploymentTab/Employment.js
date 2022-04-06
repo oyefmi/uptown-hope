@@ -1,8 +1,14 @@
 import React from "react";
-import { Card } from 'react-bootstrap';
+import { useHistory } from "react-router-dom";
+import { Card, Button } from 'react-bootstrap';
 import './Employment.css'
 
 const Employment = () => {
+    let history = useHistory();
+    function handleClick() {
+        history.push('/career-opportunities');
+    };
+
     return(
         <div className="employment">
             <div className="cover"></div>
@@ -27,7 +33,6 @@ const Employment = () => {
                                             Send us an email, or fill out the fields on the contact page. {/* Click below for infomation on how or how much! */}
                                         </Card.Text>
                                         <br />
-                                        {/* <Button variant="outline-secondary">Let Us Help</Button> */}
                                     </Card.Body>
                                 </Card>
                             </div>
@@ -42,10 +47,12 @@ const Employment = () => {
                                             Including a pdf copy of your resume, if applicable, would be greatly appreciated.
                                         </Card.Text>
                                         <br />
-                                        {/* <Button variant="outline-secondary">Join the Team</Button> */}
                                     </Card.Body>
                                 </Card>
                             </div>
+                        </div>
+                        <div className="button">
+                            <Button variant="outline-secondary" onClick={handleClick}>Join the Team</Button>
                         </div>
                     </div>
                     </div>
