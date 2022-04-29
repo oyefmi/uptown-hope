@@ -25,7 +25,7 @@ const Home = () => {
                     <div className="symbol-block">
                         <span>&#10710;</span>
                         <h3>Preparation</h3>
-                        <p>in order to always achieve a positive outcome</p>
+                        <p>to always achieve a positive outcome</p>
                     </div>
                     <div className="symbol-block">
                         <span>&#10048;</span>

@@ -3,12 +3,12 @@ import './App.css';
 import { Route, Switch } from 'react-router-dom'
 import MainNav from './components/MainNav/MainNav';
 import Footer from './components/Footer/Footer';
+import Chatbot from './components/Chatbot/Chatbot';
 
 import Home from './pages/HomePage/Home';
 import About from './pages/AboutPage/About';
 import Services from './pages/ServicesPage/Services';
 import Employment from './pages/EmploymentTab/Employment';
-// import FAQ from './pages/FAQPage/FAQ';
 import Contact from './pages/ContactPage/Contact';
 import CareerOpportunities from './pages/EmploymentTab/CareerOpportunities/CareerOpportunities';
 
@@ -29,6 +29,7 @@ class App extends Component {
             {/* <Route path='/faq' component={FAQ} /> */}
           </Switch>
         </div>
+        <Chatbot />
         <Footer />
       </div>
     );
