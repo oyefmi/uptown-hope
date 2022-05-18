@@ -1,0 +1,127 @@
+.employment {
+    background: url(../../pages/coverImages/application.jpg) no-repeat center center fixed;
+    background-size: cover;
+    height: auto; 
+    background-position-y: 40px;
+    position: relative;
+}
+
+p {
+    margin: auto;
+    padding: .5em;
+}
+
+.cover {
+    height: 60vh;
+}
+
+.wrapper {
+    background-color: #ffffff;
+    justify-content: center;
+    align-items: center;
+}
+
+.page-content {
+    text-align: center;
+    width: 70vw;
+    height: auto;
+    margin-bottom: 2em;
+}
+
+#title {
+    margin: auto;
+    padding: 20px;
+    background-color: #e8e8ea;
+    color: rgba(230, 115, 14, 1);
+}
+
+#banner {
+    margin: 1em;
+    text-align: center;
+}
+
+.career-content {
+    display: flex;
+}
+
+#top-pg {
+    margin: 2.5em;
+    padding-left: 3.5em;
+    padding-right: 3.5em;
+}
+
+.col-1 {
+    text-align: left;
+    padding-right: 15px;
+    width: 60%;
+    padding-bottom: 2em;
+}
+
+.col-2 {
+    text-align: center;
+    width: 40%;
+    height: 100%;
+}
+
+.image-car {
+    width: 27vw;
+    height: 44vh;
+}
+
+.button {
+    padding-bottom: 2em;
+}
+
+#contact-cs {
+    width: 22vw;
+    height: 55px;
+}
+
+@media (max-width: 1050px) {
+    .employment {
+        background: url(../../pages/coverImages/application.jpg) no-repeat center center;
+        background-size: 950px 1000px;
+        -webkit-background-size: 950px 1000px;
+        -moz-background-size: 950px 1000px;
+        -o-background-size: 950px 1000px;
+        background-position-y: -150px;
+        position: relative;
+    }
+
+    #banner {
+        margin-top: .8em;
+        text-align: center;
+    }
+
+    #top-pg {
+        margin: 2.5em;
+        padding-left: 3.5em;
+        padding-right: 3.5em;
+        text-align: center;
+    }
+    
+    .col-1 {
+        text-align: left;
+        font-size: 1.3vw;
+        display: inline-block;
+        padding-right: 15px;
+        width: 50%;
+    }
+    
+    .col-2 {
+        text-align: center;
+        display: inline-block;
+        width: 40%;
+        height: 100%;
+    }
+
+    .image-car {
+        width: 30vw;
+        height: 29vh;
+    }
+
+}
+
+@media (max-width: 550px) {
+    
+}
