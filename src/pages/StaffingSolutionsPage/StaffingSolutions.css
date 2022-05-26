@@ -1,5 +1,5 @@
 .employment {
-    background: url(../../pages/coverImages/application.jpg) no-repeat center center fixed;
+    background: url(../../pages/coverImages/corporate1.jpg) no-repeat center center fixed;
     background-size: cover;
     height: auto; 
     background-position-y: 40px;
@@ -35,20 +35,37 @@ p {
     color: rgba(230, 115, 14, 1);
 }
 
+.staff-content {
+    display: flex;
+    margin-top: 2em;
+    font-size: large;
+}
+
  .staff-1 { 
     text-align: left;
-    display: inline-block;
     padding-right: 15px;
-    width: 55%;
+    width: 70%;
 }
 
 .button {
-    padding-top: 20px;
+    text-align: center;
+    padding-top: 30px;
     padding-bottom: 20px;
 }
 
 .staff-2 {
-    display: inline-block;
+    margin-right: 1em;
+    width: 28%;
+}
+
+.image-bus {
+    width: 20vw;
+    height: 32vh;
+}
+
+#contact {
+    width: 18vw;
+    height: 65px;
 }
 
 @media (max-width: 950px) {
