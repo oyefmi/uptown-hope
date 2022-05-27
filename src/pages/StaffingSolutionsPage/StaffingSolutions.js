@@ -11,7 +11,7 @@ const StaffingSolutions = () => {
     }
 
     return(
-        <div className="employment">
+        <div className="staffing">
             <div className="cover"></div>
             <div className="wrapper">
                 <div className="page-content">
@@ -31,8 +31,10 @@ const StaffingSolutions = () => {
                                         <li>House Manager</li>
                                         <li>Program Manager</li>
                                     </ul>
-                                </p> 
-                                Click to Contact button or send us an email</p>
+                                </p>
+                                <div id="contact-us">
+                                    Click to Contact button or send us an email
+                                </div></p>
                         </div>
                         <div className="staff-2">
                             <img className="image-bus" 

@@ -13,8 +13,8 @@ const CareerOpportunities = () => {
     return(
         <div className="employment">
             <div className="cover"></div>
-            <div className="wrapper">
-                <div className="page-content">
+            <div id="wrapper">
+                <div id="page-content">
                     <h2 id="title">Careers at Uptown Hope</h2>
                     <h3 id="banner">Start your new career today!</h3>
                     <p id="top-pg"> As an Associate at Uptown Hope, 

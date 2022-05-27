@@ -15,13 +15,14 @@ p {
     height: 60vh;
 }
 
-.wrapper {
+#wrapper {
     background-color: #ffffff;
+    display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.page-content {
+#page-content {
     text-align: center;
     width: 70vw;
     height: auto;
@@ -66,6 +67,7 @@ p {
 .image-car {
     width: 27vw;
     height: 44vh;
+    box-shadow: 12px 15px 5px #b4b4b4;
 }
 
 .button {
@@ -77,7 +79,7 @@ p {
     height: 55px;
 }
 
-@media (max-width: 1050px) {
+@media (max-width: 1150px) {
     .employment {
         background: url(../../pages/coverImages/application.jpg) no-repeat center center;
         background-size: 950px 1000px;
@@ -93,6 +95,11 @@ p {
         text-align: center;
     }
 
+    .career-content {
+        display: grid;
+        justify-content: center;
+    }
+
     #top-pg {
         margin: 2.5em;
         padding-left: 3.5em;
@@ -101,23 +108,22 @@ p {
     }
     
     .col-1 {
-        text-align: left;
         font-size: 1.3vw;
-        display: inline-block;
-        padding-right: 15px;
-        width: 50%;
+        /* padding-right: 15px; */
+        width: fit-content;
+        align-items: center;
     }
     
     .col-2 {
         text-align: center;
-        display: inline-block;
-        width: 40%;
+        width: 100%;
         height: 100%;
     }
 
     .image-car {
-        width: 30vw;
-        height: 29vh;
+        width: 52vw;
+        height: 34vh;
+        box-shadow: 12px 15px 5px #b4b4b4;
     }
 
 }
