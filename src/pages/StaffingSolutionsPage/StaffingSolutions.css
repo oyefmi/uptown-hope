@@ -6,7 +6,7 @@
     position: relative;
 }
 
-p {
+#pg-staffing {
     margin: auto;
     padding: .5em;
 }
@@ -22,7 +22,7 @@ p {
     align-items: center;
 }
 
-.page-content {
+.page-content-staffing {
     text-align: center; 
     width: 70vw;
     height: auto;

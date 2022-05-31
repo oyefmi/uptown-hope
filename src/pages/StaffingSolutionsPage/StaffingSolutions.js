@@ -14,11 +14,11 @@ const StaffingSolutions = () => {
         <div className="staffing">
             <div className="cover"></div>
             <div className="wrapper">
-                <div className="page-content">
+                <div className="page-content-staffing">
                     <h2 id="title">Staffing</h2>
                     <div className="staff-content">
                         <div className="staff-1">
-                            <p> Is your business short on staff? 
+                            <p id="pg-staffing"> Is your business short on staff? 
                                 Are you looking for staff to help jumpstart a new business venture? 
                                 Or are you just looking to shake things up in an unconventional way? 
                                 Whatever your Health Care staffing need, Uptown Hope can help.
