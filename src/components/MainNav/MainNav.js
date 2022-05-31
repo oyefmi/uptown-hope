@@ -27,8 +27,11 @@ const MainNav = () => {
                         <Nav.Link>Services</Nav.Link>
                     </LinkContainer>
                     <LinkContainer to="/employment">
-                        <Nav.Link>Employment</Nav.Link>
+                        <Nav.Link>Career Opportunities</Nav.Link>
                     </LinkContainer>
+                    <LinkContainer to="/staffing-solutions">
+                        <Nav.Link>Staffing Solutions</Nav.Link>
+                    </LinkContainer>        
                     {/* <LinkContainer to="/faq">
                         <Nav.Link>FAQ</Nav.Link>
                     </LinkContainer> */}
