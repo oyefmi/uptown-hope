@@ -4,11 +4,26 @@
     top: 0;
     z-index: 5;
     padding-left: 1rem;
-    padding-right: 1rem;
+    padding-right: 2rem;
 }
 
+
+
 .nav-link {
-    padding-left: 1rem !important;
-    padding-right: 4rem !important;
-    font-size: 18px;
+    text-align: center;
+    padding-left: 2.5rem !important;
+    padding-right: 2.5rem !important;
+    font-size: 17px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: rgba(230, 115, 14, 1) !important;
+}
+
+.nav-link:hover {
+    background-color: #0b2ca3; /*will change background-color of element on hover */
+    color: white !important; 
+    border-radius: 50%;
+}
+
+.nav-link:active {
+    color: #0b2ca3;
 }

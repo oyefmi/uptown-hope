@@ -5,7 +5,7 @@ import './MainNav.css';
 
 const MainNav = () => {
     return(
-        <Navbar collapseOnSelect bg="light" expand="lg">
+        <Navbar collapseOnSelect bg="light" expand="xxl">
             <Navbar.Brand href="/">
                 <img
                     src="../images/uptownhope_logo.jpeg"
@@ -32,9 +32,6 @@ const MainNav = () => {
                     <LinkContainer to="/staffing-solutions">
                         <Nav.Link>Staffing Solutions</Nav.Link>
                     </LinkContainer>        
-                    {/* <LinkContainer to="/faq">
-                        <Nav.Link>FAQ</Nav.Link>
-                    </LinkContainer> */}
                     <LinkContainer to="/contact">
                         <Nav.Link>Contact</Nav.Link>
                     </LinkContainer>
