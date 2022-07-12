@@ -87,7 +87,7 @@
 
     .staff-1 { 
         width: 100%;
-        font-size: 1.7vw;
+        /* font-size: 1.7vw; */
     }
 
     .staff-2 {
@@ -96,8 +96,8 @@
     }
 
     .image-bus {
-        width: 42vw;
-        height: 40vh;
+        width: 65vw;
+        height: 35vh;
         box-shadow: 12px 15px 5px #b4b4b4;
     }
 
@@ -105,4 +105,8 @@
         text-align: center;
     }
 
+    #contact {
+        width: 38vw;
+        height: 58px;
+    }
 }

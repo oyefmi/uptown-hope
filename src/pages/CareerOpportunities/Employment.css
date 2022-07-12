@@ -49,19 +49,19 @@
 .col-1 {
     text-align: left;
     padding-right: 15px;
-    width: 60%;
+    width: 55%;
     padding-bottom: 2em;
 }
 
 .col-2 {
     text-align: center;
-    width: 40%;
+    width: 45%;
     height: 100%;
 }
 
 .image-car {
-    width: 27vw;
-    height: 44vh;
+    width: 30vw;
+    height: 40vh;
     box-shadow: 12px 15px 5px #b4b4b4;
 }
 
@@ -86,7 +86,7 @@
     }
 
     #banner {
-        margin-top: .8em;
+        margin-top: 1em;
         text-align: center;
     }
 
@@ -97,13 +97,12 @@
 
     #top-pg {
         margin: 2.5em;
-        padding-left: 3.5em;
-        padding-right: 3.5em;
+        padding-left: 0.7em;
+        padding-right: 0.7em;
         text-align: center;
     }
     
     .col-1 {
-        font-size: 1.3vw;
         /* padding-right: 15px; */
         width: fit-content;
         align-items: center;
@@ -116,13 +115,14 @@
     }
 
     .image-car {
-        width: 52vw;
-        height: 34vh;
+        width: 63vw;
+        height: 51vh;
         box-shadow: 12px 15px 5px #b4b4b4;
     }
 
-}
+    #contact-cs {
+        width: 42vw;
+        height: 55px;
+    }
 
-@media (max-width: 550px) {
-    
 }
