@@ -49,22 +49,22 @@ p {
 
 .symbol-block {
     color:  rgba(230, 115, 14, 1);
-    padding-bottom: 15px;
-    padding-right: 60px;
+    padding-top: 1.4em;
+    padding-bottom: 1em;
+    padding-right: 4.2em;
     font-weight: 500;
     max-width: 20%;
-    vertical-align: top;
+    text-shadow: 2px 2px #0b2ca3;
+   
 }
 
-.symbol-block span {
-    color:rgba(230, 115, 14, 1);
-    font-size: 50px;
+.icon {
+    font-size: 1.8vw;
 }
 
 .symbol-block h3 {
     font-weight: bold;
-    /* margin-top: 1rem; */
-    margin-bottom: auto;
+    padding-top: .4em;
 }
 
 .info {
@@ -104,15 +104,18 @@ p {
 }
 
 @media screen and (max-width: 1200px) {
-    .symbol-block span {
-        color:rgba(230, 115, 14, 1);
-        font-size: 3.9vw;
+    .symbol-block {
+        padding-right: 1em;
+        max-width: 20%;
+    }
+    
+    .icon {
+        font-size: 1.8vw;
     }
 
     .symbol-block h3 {
         font-weight: bold;
         font-size: 2.2vw;
-        margin-bottom: auto;
     }
 
     .symbol-block p {
@@ -141,16 +144,18 @@ p {
         background-position-y: 60px;
         position: relative;
     }
+    
+    .symbol-block {
+        text-align: center;
+    }
 
-    .symbol-block span {
-        color:rgba(230, 115, 14, 1);
-        font-size: 3.9vw;
+    .icon {
+        font-size: 2.8vw;
     }
 
     .symbol-block h3 {
         font-weight: bolder;
         font-size: 3vw;
-        margin-bottom: auto;
     }
 
     .symbol-block p {
