@@ -10,10 +10,9 @@ const About = () => {
                     <div className='mission'>
                         <h2 id="title">Mission</h2>
                         <p className="mission-text">
-                            <strong>Hope</strong> (Holistic, Opportunity, Preparation, Empowerment) is the foundation of the 
-                            existence of <strong>Uptown Hope (UH)</strong>. The focal point of UH's mission is the Opportunity 
-                            for clients' Empowerment and assistance, using Holistic approach to quality service 
-                            provision, and Preparation to always a achieve a positive outcome. 
+                            <strong>HOPE</strong> (Holistic, Opportunity, Preparation, Empowerment) is the foundation of the 
+                            existence of <strong>Uptown Hope (UH)</strong>. The mission of UH is to use a <strong>Holistic</strong> approach to provide quality service, embrace the <strong>Opportunity</strong> to help improve each client's productivity through 
+                            <strong>Empowerment</strong>, and focus on assistence and <strong>Preparation</strong> to always achieve a positive outcome.
                             <br />
                             <br />
                             <strong>At Uptown Hope we strive to:</strong><br /><br />

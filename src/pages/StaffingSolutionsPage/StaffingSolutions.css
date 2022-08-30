@@ -96,8 +96,8 @@
     }
 
     .image-bus {
-        width: 60vw;
-        height: 35vh;
+        width: 44vw;
+        height: 33vh;
         box-shadow: 12px 15px 5px #b4b4b4;
     }
 
@@ -108,5 +108,13 @@
     #contact {
         width: 38vw;
         height: 58px;
+    }
+}
+
+@media (max-width: 900px) {
+    .image-bus {
+        width: 50vw;
+        height: 28vh;
+        box-shadow: 12px 15px 5px #b4b4b4;
     }
 }

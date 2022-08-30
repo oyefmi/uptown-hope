@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import './App.css';
-import { library } from '@fortawesome/fontawesome-svg-core';
 import { Route, Switch } from 'react-router-dom'
 import MainNav from './components/MainNav/MainNav';
 import Footer from './components/Footer/Footer';

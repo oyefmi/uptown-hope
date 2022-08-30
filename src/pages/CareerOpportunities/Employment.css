@@ -126,3 +126,11 @@
     }
 
 }
+
+@media (max-width: 900px) {
+    .image-car {
+        width: 60vw;
+        height: 40vh;
+        box-shadow: 12px 15px 5px #b4b4b4;
+    }
+}
