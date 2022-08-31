@@ -1,5 +1,7 @@
 import React from "react";
 import './Home.css';
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faPeace, faSun, faHourglass2, faHandsHelping } from "@fortawesome/free-solid-svg-icons";
 
 const Home = () => {
     return(
@@ -13,22 +15,22 @@ const Home = () => {
             <div className="cover-home"></div>
             <div className="wrapper-symbols">
                     <div className="symbol-block">
-                        
+                        <FontAwesomeIcon icon={faPeace} className="icon"/>
                         <h3 className="acronym">Holistic</h3>
                         <p>approach to quality service provision</p>
                     </div>
                     <div className="symbol-block">
-                        
+                        <FontAwesomeIcon icon={faSun} className="icon"/>
                         <h3 className="acronym">Opportunity</h3> 
                         <p>for clients to effectively fill any staffing vacancies</p>
                     </div>
                     <div className="symbol-block">
-                        
+                        <FontAwesomeIcon icon={faHourglass2} className="icon"/>
                         <h3 className="acronym">Preparation</h3>
                         <p>to always achieve a positive outcome</p>
                     </div>
                     <div className="symbol-block">
-                        
+                        <FontAwesomeIcon icon={faHandsHelping} className="icon"/>
                         <h3 className="acronym">Empowerment</h3>
                         <p>and assistance</p>
                     </div>
