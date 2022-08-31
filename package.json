@@ -1,10 +1,6 @@
 {
   "name": "uptownhope",
   "version": "0.1.0",
-  "engines": {
-    "node": "16.16",
-    "npm": "8.11"
-  },
   "private": true,
   "dependencies": {
     "@popperjs/core": "^2.9.3",
