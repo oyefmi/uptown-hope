@@ -54,8 +54,10 @@ p {
     padding-right: 4.2em;
     font-weight: 500;
     max-width: 20%;
+}
+
+.acronym {
     text-shadow: 2px 2px #0b2ca3;
-   
 }
 
 .icon {
