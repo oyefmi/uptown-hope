@@ -6,14 +6,16 @@ const Footer = () => {
     return(
         <footer className="footer-distributed">
 			<div className="footer-left">
-				<img
-                    src="../images/uptownhope_logo.jpeg"
-                    width="170"
-                    height="100"
-                    paddingLeft="1"
-                    className="d-inline-block align-top"
-                    alt="Uptown Hope logo"
-                />
+				<div className="logo">
+					<img
+						src="../images/uptownhope_logo.jpeg"
+						width="170"
+						height="100"
+						paddingLeft="1"
+						className="logo"
+						alt="Uptown Hope logo"
+					/>
+				</div>
 				<p className="footer-links">
 					<a href="/" className="link-1">Home</a>
 					<a href="/about">About</a>

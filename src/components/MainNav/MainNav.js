@@ -7,12 +7,14 @@ const MainNav = () => {
     return(
         <Navbar collapseOnSelect bg="light" expand="xxl">
             <Navbar.Brand href="/">
-                <img
-                    src="../images/uptownhope_logo.jpeg"
-                    alt="Uptown Hope logo" 
-                    width="100"
-                    height="60"
-                />
+                <div className="nav-logo">
+                    <img
+                        src="../images/uptownhope_logo.jpeg"
+                        alt="Uptown Hope logo" 
+                        width="100"
+                        height="60"
+                    />
+                </div>
             </Navbar.Brand>
             <Navbar.Toggle aria-controls="responsive-navbar-nav" />
             <Navbar.Collapse className="justify-content-center">
