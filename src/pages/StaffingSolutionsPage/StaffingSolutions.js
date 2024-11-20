@@ -1,13 +1,14 @@
 import React from "react";
 import './StaffingSolutions.css';
 import { Button } from 'react-bootstrap';
-import { useHistory } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
+
 
 const StaffingSolutions = () => {
-    let history = useHistory();
+    let navigate = useNavigate();
 
     function handleClick() {
-        history.push('/contact');
+        navigate('/contact');
     }
 
     return(

@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import './App.css';
-import { Route, Switch } from 'react-router-dom'
+import { Route, Routes } from 'react-router-dom'
 import MainNav from './components/MainNav/MainNav';
 import Footer from './components/Footer/Footer';
 import Chatbot from './components/Chatbot/Chatbot';
@@ -19,15 +19,14 @@ class App extends Component {
       <div className="App">
         <MainNav />
         <div>
-          <Switch>
-            <Route exact path='/' component={Home} />
-            <Route path='/about' component={About} />
-            <Route path='/services' component={Services} />
-            <Route path='/employment/' component={CareerOpportunities} />
-            <Route path='/staffing-solutions' component={StaffingSolutions} />
-            <Route path='/contact' component={Contact} />
-            {/* <Route path='/faq' component={FAQ} /> */}
-          </Switch>
+          <Routes>
+            <Route path='/' element={<Home />} />
+            <Route path='/about' element={<About />} />
+            <Route path='/services' element={<Services />} />
+            <Route path='/employment/' element={<CareerOpportunities />} />
+            <Route path='/staffing-solutions' element={<StaffingSolutions />} />
+            <Route path='/contact' element={<Contact />} />
+          </Routes>
         </div>
         <Chatbot />
         <Footer />

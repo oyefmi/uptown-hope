@@ -24,7 +24,7 @@ p {
 }
 
 .uptown-hope p {
-    font-size: 20px;
+    font-size: 22px;
 }
 
 .uptown-hope a:link {
@@ -48,15 +48,15 @@ p {
 
 @media (max-width: 1000px) {
     .uptown-hope p {
-        font-size: 3.2vw;
+        font-size: 2.4vw;
     } 
 
     .uptown-hope a:link {
-        font-size: 3.4vw;
+        font-size: 2.3vw;
     }
     
     .container {
-        font-size: 4vw;
+        font-size: 2.5vw;
         padding-top: 1em;
     }
 

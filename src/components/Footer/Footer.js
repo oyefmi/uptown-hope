@@ -19,23 +19,22 @@ const Footer = () => {
 					<a href="/about">About</a>
 					<a href="/services">Services</a>
 					<a href="/employment">Career Opportunities</a>
-					<a href="/staffing">Staffing Solutions</a>
+					<a href="/staffing-solutions">Staffing Solutions</a>
 					<a href="/contact">Contact</a>
 				</p>
-				<p className="footer-company-name">© 2017 Uptown Hope. All Rights Reserved</p>
 			</div>
 			<div className="footer-center">
 				<div>
 					<i className="fa fa-map-marker"></i>
-					<p><span>300 Redland Ct., Suite 200</span> Owings Mills, MD 21117</p>
+					<p><span>300 Redland Ct., Suite 309</span> <span>Owings Mills, MD 21117</span></p>
 				</div>
 				<div>
 					<i className="fa fa-phone"></i>
-					<p>(410) 363-9495</p>
+					<p><span>(410) 363-9495</span></p>
 				</div>
 				<div>
 					<i className="fa fa-envelope"></i>
-					<p><a href="mailto:info.uptownhope@gmail.com">info.uptownhope@gmail.com</a></p>
+					<p><span><a href="mailto:info.uptownhope@gmail.com">info.uptownhope@gmail.com</a></span></p>
 				</div>
 			</div>
 			<div className="footer-right">
@@ -47,7 +46,7 @@ const Footer = () => {
 						<SocialIcon className="linkedin" url="https://linkedin.com/company/uptown-hope-llc/" network="linkedin" />
 					</div>
 					<div className="social-icons">
-						<SocialIcon url="" network="facebook" />
+						<SocialIcon className="facebook" url="" network="facebook" />
 					</div>
 					{/* <div className="social-icons">
 						
@@ -57,6 +56,9 @@ const Footer = () => {
 					</div> */}
 				</div>
 			</div>
+			<br />
+			<br />
+			<span className="footer-copyright">© 2017 Uptown Hope. All Rights Reserved</span>
 		</footer>
     )
 }
