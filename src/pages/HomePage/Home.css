@@ -4,6 +4,12 @@ p {
 
 .cover-home {
     height: 80vh;
+    background: url(../../pages/coverImages/uptownhope_bkgrd.png) no-repeat center center fixed;
+    background-size: 80vw 110vh;
+    -webkit-background-size: 120vw 100vh;
+    -moz-background-size: 80vw 110vh;
+    -o-background-size: 80vw 110vh;
+    background-position-y: 105px;
 }
 
 .wrapper {
@@ -20,12 +26,7 @@ p {
 }
 
 .main {
-    background: url(../../pages/coverImages/uptownhope_bkgrd.png) no-repeat center center fixed;
-    background-size: cover;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-position-y: 20px;
+    background-color: rgba(0, 0, 0, .95);
     position: relative;
     margin: auto;
 }
@@ -33,6 +34,7 @@ p {
 .top-block {
     background: rgba(230, 115, 14, 1);
     color:  #0b2ca3;
+    padding-top: 1em;
     padding-bottom: .6em;
 }
 
@@ -48,23 +50,25 @@ p {
 }
 
 .symbol-block {
-    color:  rgba(230, 115, 14, 1);
-    padding-bottom: 15px;
-    padding-right: 60px;
+    color:  rgb(230, 115, 14);
+    padding-top: 1.4em;
+    padding-bottom: 1em;
+    padding-right: 4.2em;
     font-weight: 500;
     max-width: 20%;
-    vertical-align: top;
 }
 
-.symbol-block span {
-    color:rgba(230, 115, 14, 1);
-    font-size: 50px;
+.acronym {
+    text-shadow: 1.5px 1.3px #0b2ca3;
+}
+
+.icon {
+    font-size: 2vw;
 }
 
 .symbol-block h3 {
     font-weight: bold;
-    /* margin-top: 1rem; */
-    margin-bottom: auto;
+    padding-top: .4em;
 }
 
 .info {
@@ -104,15 +108,18 @@ p {
 }
 
 @media screen and (max-width: 1200px) {
-    .symbol-block span {
-        color:rgba(230, 115, 14, 1);
-        font-size: 3.9vw;
+    .symbol-block {
+        padding-right: 1em;
+        max-width: 20%;
+    }
+    
+    .icon {
+        font-size: 1.8vw;
     }
 
     .symbol-block h3 {
         font-weight: bold;
         font-size: 2.2vw;
-        margin-bottom: auto;
     }
 
     .symbol-block p {
@@ -141,16 +148,18 @@ p {
         background-position-y: 60px;
         position: relative;
     }
+    
+    .symbol-block {
+        text-align: center;
+    }
 
-    .symbol-block span {
-        color:rgba(230, 115, 14, 1);
-        font-size: 3.9vw;
+    .icon {
+        font-size: 2.8vw;
     }
 
     .symbol-block h3 {
         font-weight: bolder;
         font-size: 3vw;
-        margin-bottom: auto;
     }
 
     .symbol-block p {

@@ -24,6 +24,7 @@ const StaffingSolutions = () => {
                                 Or are you just looking to shake things up in an unconventional way? 
                                 Whatever your Health Care staffing need, Uptown Hope can help.
                                 <br />
+                                <br />
                                 <p> We current provide staffing for the following positions: 
                                     <ul>
                                         <li>CNA</li>

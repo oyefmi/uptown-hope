@@ -43,14 +43,8 @@ footer {
 
 /* The company logo */
 
-.footer-distributed h3{
-	color:  #ffffff;
-	font: normal 36px 'Open Sans', cursive;
-	margin: 0;
-}
-
-.footer-distributed h3 span{
-	color:  lightseagreen;
+.footer-left .logo{
+	margin-left: 4rem;
 }
 
 /* Footer links */
@@ -74,7 +68,7 @@ footer {
 	color:  #222;
 	font-size: 14px;
 	font-weight: normal;
-	margin: 0;
+	margin-left: 4rem;
 }
 
 /* Footer Center */
@@ -168,6 +162,11 @@ footer {
 	font-size: 12px;
 }
 
+.footer-copyright {
+	color: #0b2ca3;
+	font-size: 12px;
+}
+
 @media (max-width: 1400px) {
 	.footer-distributed{
 		/* box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12); */
@@ -197,6 +196,24 @@ footer {
 		background: #e6730e;
 		margin: auto;
 	}
+
+	.footer-left .logo{
+		margin-left: auto
+	}
+	
+	.footer-distributed .footer-links{
+		color:  #0b2ca3;
+		margin: 20px 0 12px;
+		padding: 0;
+	}
+	
+	.footer-distributed .footer-company-name{
+		color:  #222;
+		font-size: 14px;
+		font-weight: normal;
+		margin-left: auto;
+	}
+	
 
 	.footer-distributed .footer-center i{
 		margin-left: 0;
